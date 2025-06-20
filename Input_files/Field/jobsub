@@ -1,0 +1,65 @@
+#!/bin/bash
+#
+#SBATCH --job-name=IB09
+#
+#SBATCH --time=24:00:00
+#SBATCH --ntasks=360
+#SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=2G
+#SBATCH --mail-user=treillou@stanford.edu
+#SBATCH --mail-type=END
+
+# Load necessary packages
+module purge
+module load devel gcc
+module load devel openmpi
+module load devel netcdf
+module load devel hdf5
+module load devel netcdf-c
+module load devel netcdf-fortran
+
+export croco=/home/users/treillou/croco_old/croco
+export confgs=/home/users/treillou/Configs
+
+# Redirect 
+export CC=gcc
+export FC=gfortran
+#export F90=
+#export F79=
+export MPIF90=mpif90
+
+homedir=$SLURM_SUBMIT_DIR
+echo $SLURM_SUBMIT_DIR
+workdir=IB09_2024_7
+
+
+if [ -d $SCRATCH/$workdir ]; then
+  echo "Directory already exists."
+  workdir="${workdir}_repeat"
+  workdir=$SCRATCH/$workdir
+  mkdir $workdir
+else
+  workdir=$SCRATCH/$workdir
+  mkdir $workdir
+fi
+
+cp croco  $workdir
+cp croco.in  $workdir
+cp cppdefs.h $workdir
+cp jobsub $workdir
+cp *.F $workdir
+cp *.h $workdir
+cp Makefile $workdir
+cp stations.in $workdir
+cp -r ./Compile $workdir
+rm -r ./Compile
+cd $workdir
+
+echo "launching croco..."
+mpirun -np 360 ./croco croco.in > croco.out
+#(time mpiexec.hydra -np 4 ./croco croco.in) > croco.out 2> perf.out
+echo "... croco done"
+
+cp croco.out $homedir
+
+
