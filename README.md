@@ -12,6 +12,8 @@ This repository hosts the input files and scripts needed to run the simulations 
   - Idealized: contains input files needed to run the idealized cases based on IB09.
   - Lab: contains input files needed to run the lab experiment of Baker et al. (2023).
 
+Note: to run one of these configuration with the exact same version of CROCO, run them like a normal CROCO configuration including files from Compile directories in your working directory.
+
 ## Figures
   - contains all the figures present in the manuscript.
 
