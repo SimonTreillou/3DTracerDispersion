@@ -1,0 +1,5 @@
+application called MPI_Abort(MPI_COMM_WORLD, 12083624) - process 6
+
+real	65m12.516s
+user	0m0.180s
+sys	0m0.678s

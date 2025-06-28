@@ -1,0 +1,4218 @@
+ -------------- LOG FILE -----------------
+ Wave basin G1d                                                                 
+  
+  --------------input start --------------
+                                          
+ -------------- PARALLEL -----------------
+ PX   =  1 PY   =  1
+                                          
+ -------------- GRID INFO -----------------
+ Mglob=     200 Nglob=     300
+ DX=        0.10 DY=        0.10
+ DEPTH_TYPE:DATA                                              
+ DEPTH_FILE:depth_lab.txt                                     
+                                          
+ -------------- TIME INFO -----------------
+         PLOT_START_TIME Default:  0.0 s
+                             StationOutputBuffer not specified, use default:1000
+ TOTAL_TIME=     1500.00
+ PLOT_INTV=         2.00
+ SCREEN_INTV=      100.00
+                                          
+ -------------- HOT START -----------------
+                                          
+ -------------- STILL WATER INFO -----------------
+       WaterLevel =      0.00000
+                                          
+ -------------- WAVEMAKER -----------------
+ WAVEMAKER:WK_NEW_IRR                                        
+          EqualEnergy NOT USED in frequency domain
+                                          
+ -------------- PERIODIC BC -----------------
+  PERIODIC: T
+                                          
+ -------------- SPONGE -----------------
+                   DIRECT_SPONGE IS USED
+                 FRICTION_SPONGE IS USED
+ FRICTION_SPONGE CDsponge=        1.00
+ Sponge_west_width =        3.00
+ Sponge_east_width =        0.00
+ Sponge_south_width=        0.00
+ Sponge_north_width=        0.00
+ R_sponge          =        0.85
+ A_sponge          =        5.00
+              No WavemakerCurrentBalance
+                                          
+ -------- OBSTACLE and BREAKWATER -----------------
+ OBSTACLE_FILE:   NO
+    BREAKWATER_FILE:   NO
+     BreakWaterAbsorbCoef Default:  10.0
+                                          
+ -------------- PHYSICS -----------------
+         DISPERSION Default:  DISPERSION
+        Gamma1 Default:  1.0: DISPERSION
+              Gamma2 Default:  1.0: Full nonlinear
+               Beta_ref Default:  -0.531
+                      Gamma3 Default:  1.0: NOT fully linear
+  Summary of Physics
+ Gamma1 =         1.00
+ Gamma2 =         1.00
+Beta_ref=        -0.53
+ Gamma3 =         1.00
+ VISCOSITY_BREAKING IS USED
+               SWE_ETA_DEP Default:  0.8
+             Friction_Matrix Default:  constant Cd
+  Cd_fixed (if you used fixed Cd) =        0.00
+                                          
+ -------------- NUMERICS -----------------
+       Time_Scheme Default:  Runge_Kutta
+ TIME_SCHEME:Runge_Kutta                                       
+  CONSTRUCTION                              NOT DEFINED, USE HLL
+ CONSTRUCTION:HLLC                                              
+  HIGH_ORDER                     NOT DEFINED, USE FOURTH-ORDER
+ HIGH_ORDER:FOURTH                                            
+ CFL=        0.10
+  FroudeCap=        1.00
+          USE MIN(MinDepthFrc, MinDepth)
+ MinDepth=    0.001000
+ MinDepthFrc=    0.001000
+                               Dont record wave arrival time
+                                          
+ --------- WAVE BREAKING -----------------
+                      ROLLER_EFFECT:  NO
+ Cbrk1 =    0.450000
+ Cbrk2 =    0.350000
+            WAVEMAKER_Cbrk Default:  1.0
+  WAVEMAKER_Cbrk =         1.000000
+           WAVEMAKER_VIS Default:  FALSE
+                                          
+ -------- WAVE-AVERAGED PROPERTY -----------------
+                     C_smg Default:  0.0
+ T_INTV_mean =   10.000000
+ STEADY_TIME =   10.000000
+ C_smg =    0.000000
+                    nu_bkg Default:  0.0
+                                          
+ -------------- OUTPUT INFO -----------------
+ RESULT_FOLDER:output/                                           
+ FIELD_IO_TYPE = 
+ ASCII                                                                          
+  
+         OUTPUT_RES NOT FOUND, OUTPUT_RES=1: full resolution
+     OUTPUT_RES         1
+      EtaBlowVal Default:  100xmax_depth
+      OUT_DEPTH T
+          OUT_U T
+          OUT_V T
+        OUT_ETA T
+       OUT_Hmax F
+       OUT_Hmin F
+       OUT_Umax F
+      OUT_MFmax F
+     OUT_VORmax F
+       OUT_MASK F
+      OUT_MASK9 F
+      OUT_Umean T
+      OUT_Vmean T
+    OUT_ETAmean F
+ OUT_WaveHeight T
+        OUT_SXL F
+        OUT_SXR F
+        OUT_SYL F
+        OUT_SYR F
+    OUT_SourceX F
+    OUT_SourceY F
+          OUT_P F
+          OUT_Q F
+         OUT_Fx F
+         OUT_Fy F
+         OUT_Gx F
+         OUT_Gy F
+        OUT_AGE F
+     OUT_ROLLER F
+   OUT_UNDERTOW F
+         OUT_NU F
+        OUT_TMP F
+       OUT_TIME F
+                                          
+  --------------input end --------------
+                                          
+                 Time_ramp Default:  0.0
+                         Ywidth_WK Default:  LARGE
+                  Wave Coherence Percentage:  0.0%
+ Xc_WK   =          4.00
+ Yc_WK   =        0.00
+ Ywidth_WK=   999999.00
+ DEP_WK  =          1.07
+ Time_ramp=         0.00
+ Delta_WK=          0.50
+    Nfreq=          1125
+   Ntheta=            25
+ FreqPeak=          0.50
+ FreqMin =          0.03
+ FreqMax =          3.00
+ Hmo     =          0.43
+ GammaTMA=          3.30
+ ThetaPeak=        -3.30
+ Sigma_Theta=       26.10
+     alpha_c=        0.00
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.03000    11.70000     0.00000
+     0.00000     0.00809
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.03264   -10.80000     0.00000
+     0.00000    30.61168
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.03528     4.20000     0.00000
+     0.00000   216.48695
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.03793    -3.30001     0.00000
+     0.00000   320.98004
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.04057    86.70000     0.00000
+     0.00000   348.46405
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.04321   -90.00000     0.00000
+     0.00000    68.28832
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.04585    79.20000     0.00000
+     0.00000   185.39130
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.04850   -85.80000     0.00000
+     0.00000   143.28302
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.05114    71.70000     0.00000
+     0.00000    94.64622
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.05378   -78.30000     0.00000
+     0.00000   267.66446
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.05642    64.20000     0.00000
+     0.00000    32.23720
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.05907   -70.80000     0.00000
+     0.00000   201.74039
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.06171    56.70000     0.00000
+     0.00000   209.60268
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.06435   -63.30000     0.00000
+     0.00000   291.44400
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.06699    49.20000     0.00000
+     0.00000   213.09074
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.06964   -55.80000     0.00000
+     0.00000   184.21652
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.07228    41.70000     0.00000
+     0.00000   315.58820
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.07492   -48.30000     0.00000
+     0.00000   358.23044
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.07756    34.20000     0.00000
+     0.00000   261.43622
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.08020   -40.80000     0.00000
+     0.00000   347.98010
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.08285    26.70001     0.00000
+     0.00000   106.95684
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.08549   -33.30001     0.00000
+     0.00000   153.37830
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.08813    19.20001     0.00000
+     0.00000   323.81918
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.09077   -25.80001     0.00000
+     0.00000   235.07956
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.09342    11.70000     0.00000
+     0.00000   324.55234
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.09606   -18.30000     0.00000
+     0.00000   346.15192
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.09870     4.20000     0.00000
+     0.00000    59.29665
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.10134   -10.80000     0.00000
+     0.00000   308.87543
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.10399    -3.29999     0.00000
+     0.00000   326.46405
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.10663   -90.00000     0.00000
+     0.00000   105.84941
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.10927    86.70000     0.00000
+     0.00000   337.04770
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.11191   -85.80000     0.00000
+     0.00000   149.27205
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.11456    79.20000     0.00000
+     0.00000   111.04443
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.11720   -78.30000     0.00000
+     0.00000   185.36143
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.11984    71.70000     0.00000
+     0.00000   142.35472
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.12248   -70.80000     0.00000
+     0.00000   284.32242
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.12512    64.20000     0.00000
+     0.00000   248.09090
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.12777   -63.30000     0.00000
+     0.00000   195.93820
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.13041    56.70000     0.00000
+     0.00000   213.26665
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.13305   -55.80000     0.00000
+     0.00000    33.70677
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.13569    49.20000     0.00000
+     0.00000   219.41447
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.13834   -48.30000     0.00000
+     0.00000   155.61342
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.14098    41.70000     0.00000
+     0.00000   215.83774
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.14362   -40.80000     0.00000
+     0.00000   304.17389
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.14626    34.20000     0.00000
+     0.00000   177.25754
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.14891   -33.30001     0.00000
+     0.00000   278.22470
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.15155    26.70001     0.00000
+     0.00000    25.79829
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.15419   -25.80001     0.00000
+     0.00000    69.06922
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.15683    19.20001     0.00000
+     0.00000    80.49887
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.15948   -18.30000     0.00000
+     0.00000   280.93204
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.16212    11.70000     0.00000
+     0.00000    30.22820
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.16476   -10.80000     0.00000
+     0.00000    65.28355
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.16740     4.20000     0.00000
+     0.00000   222.01089
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.17004    -3.30001     0.00000
+     0.00000   208.49095
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.17269    86.70000     0.00000
+     0.00000   266.15222
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.17533   -90.00000     0.00000
+     0.00000   113.08732
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.17797    79.20000     0.00000
+     0.00000   157.98364
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.18061   -85.80000     0.00000
+     0.00000   148.31445
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.18326    71.70000     0.00000
+     0.00000   327.20013
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.18590   -78.30000     0.00000
+     0.00000   357.22998
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.18854    64.20000     0.00000
+     0.00000   207.74088
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.19118   -70.80000     0.00000
+     0.00000    59.01207
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.19383    56.70000     0.00000
+     0.00000   251.46776
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.19647   -63.30000     0.00000
+     0.00000   120.54533
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.19911    49.20000     0.00000
+     0.00000   164.08170
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.20175   -55.80000     0.00000
+     0.00000    27.43855
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.20440    41.70000     0.00000
+     0.00000    46.36703
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.20704   -48.30000     0.00000
+     0.00000    62.82859
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.20968    34.20000     0.00000
+     0.00000   159.03987
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.21232   -40.80000   -29.58750
+     0.00000    13.42797
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.21496    26.70001     0.00000
+     0.00000   181.49879
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.21761   -33.30001   -28.74688
+     0.00000   168.26933
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.22025    19.20001     0.00000
+     0.00000   208.44569
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.22289   -25.80001     0.00000
+     0.00000   242.68059
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.22553    11.70000     0.00000
+     0.00000    33.62814
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.22818   -18.30000     0.00000
+     0.00000    24.01317
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.23082     4.20000     0.00000
+     0.00000   299.77295
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.23346   -10.80000     0.00000
+     0.00000   140.32170
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.23610    -3.29999     0.00000
+     0.00000    68.71081
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.23875   -90.00000   -25.79706
+     0.00000    59.54351
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.24139    86.70000    25.46805
+     0.00000   345.07669
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.24403   -85.80000   -25.14677
+     0.00000   356.68954
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.24667    79.20000    24.83291
+     0.00000    40.88321
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.24931   -78.30000   -24.52615
+     0.00000   313.43011
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.25196    71.70000    24.22631
+     0.00000   224.01033
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.25460   -70.80000   -23.93309
+     0.00000   242.15492
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.25724    64.20000    23.64626
+     0.00000   221.05637
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.25988   -63.30000   -23.36561
+     0.00000   211.57413
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.26253    56.70000    23.09093
+     0.00001    54.32520
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.26517   -55.80000   -22.82197
+     0.00001    91.80518
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.26781    49.20000    22.55862
+     0.00001   287.61810
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.27045   -48.30000   -22.30062
+     0.00003   213.49637
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.27310    41.70000    22.04784
+     0.00003   322.79459
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.27574   -40.80000   -21.80006
+     0.00005    97.81922
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.27838    34.20000    21.55718
+     0.00007    71.26220
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.28102   -33.30001   -21.31901
+     0.00010    97.37322
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.28367    26.70001    21.08541
+     0.00013   142.69260
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.28631   -25.80001   -20.85624
+     0.00018    34.53488
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.28895    19.20001     0.00000
+     0.00022   233.31003
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.29159   -18.30000     0.00000
+     0.00029   227.72028
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.29423    11.70000     0.00000
+     0.00035    45.03189
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.29688   -10.80000     0.00000
+     0.00043    54.45820
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.29952     4.20000     0.00000
+     0.00051    31.98653
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.30216    -3.30001     0.00000
+     0.00061   341.59052
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.30480    86.70000    41.54300
+     0.00004   194.62898
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.30745   -90.00000   -41.04503
+     0.00005    15.33753
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.31009    79.20000    40.55865
+     0.00008   197.99020
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.31273   -85.80000   -40.08336
+     0.00009   264.63205
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.31537    71.70000    39.61874
+     0.00015   174.43616
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.31802   -78.30000   -39.16436
+     0.00017   167.57893
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.32066    64.20000    38.71978
+     0.00028     2.61192
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.32330   -70.80000   -38.28465
+     0.00031    80.11423
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.32594    56.70000    37.85862
+     0.00049    74.22522
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.32859   -63.30000   -37.44136
+     0.00054   205.73431
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.33123    49.20000    37.03251
+     0.00082    41.40328
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.33387   -55.80000   -36.63179
+     0.00089   217.64500
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.33651    41.70000    36.23895
+     0.00127    61.24942
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.33915   -48.30000   -35.85366
+     0.00138   251.28067
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.34180    34.20000    16.86867
+     0.00187    87.85149
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.34444   -40.80000   -35.10484
+     0.00202   239.28685
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.34708    26.70001    16.55481
+     0.00261    14.88725
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.34972   -33.30001   -16.40134
+     0.00280    62.51480
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.35237    19.20001    16.25011
+     0.00346   131.70454
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.35501   -25.80001   -16.10105
+     0.00368   270.53802
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.35765    11.70000     0.00000
+     0.00434   141.61664
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.36029   -18.30000   -15.80929
+     0.00460   296.97009
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.36294     4.20000     0.00000
+     0.00517   202.85287
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.36558   -10.80000     0.00000
+     0.00546   271.11456
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.36822    -3.29999     0.00000
+     0.00587   249.33469
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.37086   -90.00000   -31.73927
+     0.00039   114.85774
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.37351    86.70000    31.43304
+     0.00033   298.23767
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.37615   -85.80000   -31.13172
+     0.00056   191.71844
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.37879    79.20000    30.83517
+     0.00058   280.94742
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.38143   -78.30000   -30.54324
+     0.00094    53.11949
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.38407    71.70000    30.25582
+     0.00097   210.72125
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.38672   -70.80000   -48.53689
+     0.00150   285.34613
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.38936    64.20000    47.99198
+     0.00156   342.87604
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.39200   -63.30000   -47.45929
+     0.00229   328.51117
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.39464    56.70000    46.93827
+     0.00237   282.10822
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.39729   -55.80000   -46.42847
+     0.00335   285.97720
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.39993    49.20000    45.92935
+     0.00346   205.94234
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.40257   -48.30000   -45.44053
+     0.00467     3.38702
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.40521    41.70000    28.10496
+     0.00482    55.05052
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.40786   -40.80000   -27.85316
+     0.00624   183.61903
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.41050    34.20000    27.60484
+     0.00643   274.06491
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.41314   -33.30001   -27.35992
+     0.00798   106.41372
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.41578    26.70001    13.17434
+     0.00823   216.52176
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.41843   -25.80001   -13.06531
+     0.00979   201.57082
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.42107    19.20001    12.95755
+     0.01009   304.96448
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.42371   -18.30000   -12.85104
+     0.01152   181.50211
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.42635    11.70000     0.00000
+     0.01187   328.11981
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.42899   -10.80000     0.00000
+     0.01303   111.60585
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.43164     4.20000     0.00000
+     0.01344   285.65213
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.43428    -3.30001     0.00000
+     0.01416   353.72839
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.43692    86.70000    39.86291
+     0.00075    22.91039
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.43956   -90.00000   -39.48397
+     0.00096   347.20392
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.44221    79.20000    39.11110
+     0.00129    79.99672
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.44485   -85.80000   -38.74408
+     0.00133   161.48289
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.44749    71.70000    38.38279
+     0.00213   220.96475
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.45013   -78.30000   -38.02700
+     0.00221   109.26498
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.45278    64.20000    37.67660
+     0.00340   330.28073
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.45542   -70.80000   -37.33144
+     0.00353    20.23503
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.45806    56.70000    36.99137
+     0.00520    84.96631
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.46070   -63.30000   -52.75141
+     0.00540   288.69089
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.46335    49.20000    36.32593
+     0.00765   157.08551
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.46599   -55.80000   -51.60244
+     0.00795   354.17252
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.46863    41.70000    35.67928
+     0.01079   220.97031
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.47127   -48.30000   -35.36270
+     0.01119    18.38253
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.47391    34.20000    22.51127
+     0.01454   302.97873
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.47656   -40.80000   -34.74246
+     0.01504    86.32925
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.47920    26.70001    22.14892
+     0.01869   198.81331
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.48184   -33.30001   -21.97072
+     0.01924    37.69182
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.48448    19.20001    10.69840
+     0.02284   341.67252
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.48713   -25.80001   -21.62013
+     0.02339   192.52684
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.48977    11.70000    10.53438
+     0.02648    64.35806
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.49241   -18.30000   -10.45358
+     0.02694   187.70650
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.49505     4.20000     0.00000
+     0.02905   300.67493
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.49770   -10.80000   -10.29432
+     0.02935   118.79261
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.50034    -3.29999     0.00000
+     0.03015   158.43787
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.50298   -90.00000   -44.75574
+     0.00192   114.34971
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.50562    86.70000    44.33033
+     0.00155   254.61977
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.50827   -85.80000   -43.91189
+     0.00249   352.02905
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.51091    79.20000    43.50018
+     0.00248    73.13013
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.51355   -78.30000   -43.09499
+     0.00380   264.63116
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.51619    71.70000    42.69610
+     0.00377   130.32635
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.51883   -70.80000   -42.30338
+     0.00553   343.30203
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.52148    64.20000    41.91661
+     0.00547    12.31335
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.52412   -63.30000   -55.98149
+     0.00766    17.80855
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.52676    56.70000    55.35688
+     0.00755   316.67392
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.52940   -55.80000   -54.74745
+     0.01012   206.11369
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.53205    49.20000    40.42575
+     0.00994   353.44498
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.53469   -48.30000   -40.06634
+     0.01277    21.90435
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.53733    41.70000    39.71197
+     0.01252    24.70660
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.53997   -40.80000   -39.36252
+     0.01540   292.18628
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.54262    34.20000    28.17537
+     0.01509    42.89019
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.54526   -33.30001   -27.95032
+     0.01780   352.50714
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.54790    26.70001    18.07008
+     0.01743   110.62462
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.55054   -25.80001   -17.93329
+     0.01972    81.29713
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.55319    19.20001    17.79780
+     0.01931   293.95593
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.55583   -18.30000   -17.66358
+     0.02096   146.29301
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.55847    11.70000     8.66215
+     0.02054   310.31268
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.56111   -10.80000    -8.59861
+     0.02142   222.85666
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.56375     4.20000     0.00000
+     0.02101   353.99454
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.56640    -3.30001     0.00000
+     0.02104   271.64029
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.56904    86.70000    47.00318
+     0.00106    67.62755
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.57168   -90.00000   -46.56005
+     0.00129   329.75574
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.57432    79.20000    46.12425
+     0.00164   239.95055
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.57697   -85.80000   -45.69555
+     0.00162    13.13721
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.57961    71.70000    58.49255
+     0.00246   186.12538
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.58225   -78.30000   -57.82556
+     0.00242   299.00735
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.58489    64.20000    57.17624
+     0.00353   264.65012
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.58754   -70.80000   -56.54350
+     0.00349   325.31140
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.59018    56.70000    55.92640
+     0.00490   267.37427
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.59282   -63.30000   -55.32409
+     0.00484    63.35720
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.59546    49.20000    42.87611
+     0.00653   115.12428
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.59810   -55.80000   -54.16080
+     0.00646   204.04182
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.60075    41.70000    32.45148
+     0.00837    62.79046
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.60339   -48.30000   -41.75533
+     0.00829   118.14545
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.60603    34.20000    31.93581
+     0.01032   239.51320
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.60867   -40.80000   -31.68230
+     0.01024   142.04492
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.61132    26.70001    23.02361
+     0.01224    90.55722
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.61396   -33.30001   -31.18374
+     0.01215   167.23871
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.61660    19.20001    14.89566
+     0.01395   140.09790
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.61924   -25.80001   -22.51117
+     0.01386    65.97661
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.62189    11.70000     7.28012
+     0.01527   196.71878
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.62453   -18.30000   -14.57543
+     0.01518    92.69989
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.62717     4.20000     0.00000
+     0.01606   276.52835
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.62981   -10.80000    -7.12668
+     0.01597   219.79768
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.63246    -3.29999     0.00000
+     0.01622   294.85678
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.63510   -90.00000   -58.90459
+     0.00102    70.74137
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.63774    86.70000    58.24625
+     0.00082   156.45276
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.64038   -85.80000   -57.60537
+     0.00131    50.86534
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.64302    79.20000    56.98095
+     0.00131   120.65881
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.64567   -78.30000   -56.37205
+     0.00201   240.96388
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.64831    71.70000    55.77783
+     0.00200   327.06448
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.65095   -70.80000   -55.19751
+     0.00294   288.66003
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.65359    64.20000    54.63044
+     0.00293   108.82674
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.65624   -63.30000   -54.07594
+     0.00414    56.12251
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.65888    56.70000    53.53346
+     0.00412    89.29688
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.66152   -55.80000   -53.00242
+     0.00559   169.71407
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.66416    49.20000    42.83245
+     0.00556   108.26070
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.66681   -48.30000   -42.46874
+     0.00724    92.06216
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.66945    41.70000    33.97284
+     0.00720    93.08939
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.67209   -40.80000   -33.70910
+     0.00900   357.83197
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.67473    34.20000    33.44847
+     0.00895   107.55550
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.67738   -33.30001   -33.19091
+     0.01073   251.55411
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.68002    26.70001    25.78310
+     0.01067   328.01941
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.68266   -25.80001   -25.59537
+     0.01227   305.04636
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.68530    19.20001    18.77272
+     0.01221   172.35992
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.68794   -18.30000   -12.30367
+     0.01347    24.97727
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.69059    11.70000     6.07487
+     0.01340    37.68617
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.69323   -10.80000    -6.03382
+     0.01419    69.04299
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.69587     4.20000     0.00000
+     0.01411   254.35901
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.69851    -3.30001     0.00000
+     0.01433     2.93279
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.70116    86.70000    55.50076
+     0.00073    88.51356
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.70380   -90.00000   -54.94857
+     0.00090   158.27510
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.70644    79.20000    54.40873
+     0.00116   177.07568
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.70908   -85.80000   -53.88072
+     0.00115   140.26073
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.71173    71.70000    53.36398
+     0.00177     6.13140
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.71437   -78.30000   -63.73865
+     0.00176    48.83652
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.71701    64.20000    62.98359
+     0.00259   107.94741
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.71965   -70.80000   -62.25424
+     0.00258    89.72322
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.72230    56.70000    51.40087
+     0.00364   229.68420
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.72494   -63.30000   -60.86481
+     0.00362   166.10106
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.72758    49.20000    42.44943
+     0.00491   303.66083
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.73022   -55.80000   -50.02671
+     0.00489   251.42007
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.73286    41.70000    34.82217
+     0.00635   339.06720
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.73551   -48.30000   -41.44464
+     0.00632    74.46841
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.73815    34.20000    28.01709
+     0.00789    64.45248
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.74079   -40.80000   -40.79855
+     0.00784    65.61423
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.74343    26.70001    21.77602
+     0.00939   344.66949
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.74608   -33.30001   -27.43620
+     0.00934   141.98138
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.74872    19.20001    15.94385
+     0.01073   263.95084
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.75136   -25.80001   -21.34200
+     0.01067    51.28643
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.75400    11.70000    10.41722
+     0.01176   287.67123
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.75665   -18.30000   -15.63513
+     0.01169   257.63455
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.75929     4.20000     0.00000
+     0.01236    76.98391
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.76193   -10.80000   -10.21972
+     0.01229   170.32306
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.76457    -3.29999     0.00000
+     0.01248   343.77435
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.76722   -90.00000   -61.17299
+     0.00079   130.21919
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.76986    86.70000    60.53309
+     0.00063   210.26041
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.77250   -85.80000   -59.91147
+     0.00101     0.11160
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.77514    79.20000    59.30711
+     0.00100   347.06033
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.77778   -78.30000   -58.71896
+     0.00154   349.95914
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.78043    71.70000    58.14611
+     0.00153   237.28217
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.78307   -70.80000   -57.58771
+     0.00225    87.33496
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.78571    64.20000    57.04302
+     0.00224   146.09756
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.78835   -63.30000   -56.51136
+     0.00316   235.54070
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.79100    56.70000    55.99210
+     0.00314   264.82190
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.79364   -55.80000   -55.48463
+     0.00425   338.47217
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.79628    49.20000    47.48774
+     0.00423   150.57932
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.79892   -48.30000   -47.11592
+     0.00549   214.65251
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.80157    41.70000    40.34913
+     0.00546   331.31622
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.80421   -40.80000   -40.06135
+     0.00681   325.38876
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.80685    34.20000    34.04422
+     0.00677    41.92329
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.80949   -33.30001   -28.49195
+     0.00811   119.35135
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.81214    26.70001    23.27852
+     0.00806   128.86722
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.81478   -25.80001   -23.13480
+     0.00925   109.45558
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.81742    19.20001    18.20937
+     0.00920   170.82809
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.82006   -18.30000   -18.10033
+     0.01014   243.14322
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.82270    11.70000     8.88464
+     0.01007    46.07077
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.82535   -10.80000    -8.83323
+     0.01065   161.92244
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.82799     4.20000     0.00000
+     0.01059   198.05490
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.83063    -3.30001     0.00000
+     0.01074   147.25165
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.83327    86.70000    64.91827
+     0.00055   144.44910
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.83592   -90.00000   -64.23565
+     0.00067   222.58984
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.83856    79.20000    63.57593
+     0.00087    74.92755
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.84120   -85.80000   -62.93739
+     0.00086   268.02197
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.84384    71.70000    62.31853
+     0.00132     8.33828
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.84649   -78.30000   -61.71806
+     0.00131    17.04411
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.84913    64.20000    61.13474
+     0.00193   136.04448
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.85177   -70.80000   -60.56755
+     0.00192   243.37315
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.85441    56.70000    52.55914
+     0.00271   345.42743
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.85706   -63.30000   -59.47790
+     0.00270     6.55126
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.85970    49.20000    45.55800
+     0.00365   155.62787
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.86234   -55.80000   -51.36196
+     0.00363   192.48294
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.86498    41.70000    39.46774
+     0.00472   103.85072
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.86762   -48.30000   -44.62648
+     0.00469   337.74255
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.87027    34.20000    33.98559
+     0.00584   211.56836
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.87291   -40.80000   -38.71991
+     0.00581   136.09601
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.87555    26.70001    24.50684
+     0.00695   210.35358
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.87819   -33.30001   -28.77591
+     0.00691   177.23178
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.88084    19.20001    15.88063
+     0.00793   116.10208
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.88348   -25.80001   -24.09853
+     0.00788   243.27028
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.88612    11.70000     7.78144
+     0.00868    60.58632
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.88876   -18.30000   -15.62783
+     0.00863   282.30777
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.89141     4.20000     3.84169
+     0.00912   197.30527
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.89405   -10.80000    -7.66104
+     0.00907   321.72540
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.89669    -3.29999     0.00000
+     0.00920   326.63135
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.89933   -90.00000   -67.47310
+     0.00058   261.76273
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.90198    86.70000    66.78395
+     0.00046   268.43436
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.90462   -85.80000   -66.11994
+     0.00074   115.74519
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.90726    79.20000    65.47894
+     0.00074   295.57233
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.90990   -78.30000   -64.85924
+     0.00113    52.28533
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.91254    71.70000    64.25918
+     0.00112   265.01804
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.91519   -70.80000   -63.67740
+     0.00165    85.38581
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.91783    64.20000    63.11268
+     0.00164    18.21376
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.92047   -63.30000   -62.56392
+     0.00232    76.29229
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.92311    56.70000    55.09572
+     0.00230   265.17450
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.92576   -55.80000   -54.69880
+     0.00312    77.58118
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.92840    49.20000    48.56474
+     0.00310   201.56136
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.93104   -48.30000   -48.25328
+     0.00403   208.14360
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.93368    41.70000    38.22618
+     0.00401    60.23557
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.93633   -40.80000   -38.01126
+     0.00500   271.01376
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.93897    34.20000    33.47708
+     0.00496    64.29295
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.94161   -33.30001   -33.29821
+     0.00594   284.48456
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.94425    26.70001    25.14996
+     0.00590   153.32039
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.94690   -25.80001   -25.02405
+     0.00678    48.03776
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.94954    19.20001    17.50166
+     0.00673    70.89012
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.95218   -18.30000   -17.41786
+     0.00742   136.96378
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.95482    11.70000    10.29832
+     0.00737   338.44946
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.95746   -10.80000   -10.25045
+     0.00779   134.47784
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.96011     4.20000     3.38504
+     0.00774   219.92065
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.96275    -3.30001     0.00000
+     0.00786   109.62799
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.96539    86.70000    69.41657
+     0.00040   212.37581
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.96803   -90.00000   -68.73843
+     0.00049   232.12764
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.97068    79.20000    68.08624
+     0.00063    33.54428
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.97332   -85.80000   -67.45763
+     0.00063   296.16400
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.97596    71.70000    66.85066
+     0.00097   171.29874
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.97860   -78.30000   -66.26361
+     0.00096   281.80353
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.98125    64.20000    58.69425
+     0.00141   338.32379
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.98389   -70.80000   -65.14352
+     0.00140   188.77713
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.98653    56.70000    52.22954
+     0.00198   141.27644
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.98917   -63.30000   -57.48449
+     0.00197    75.29764
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.99181    49.20000    46.68939
+     0.00267   132.33014
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.99446   -55.80000   -51.28234
+     0.00265   228.24963
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.99710    41.70000    37.61920
+     0.00344    38.22647
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     0.99974   -48.30000   -45.91510
+     0.00342   230.24431
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.00238    34.20000    33.38031
+     0.00427   202.37546
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.00503   -40.80000   -37.05981
+     0.00424   266.02063
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.00767    26.70001    25.87700
+     0.00508   241.84218
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.01031   -33.30001   -32.90581
+     0.00504   244.92760
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.01295    19.20001    18.94090
+     0.00579   139.40593
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.01560   -25.80001   -25.53031
+     0.00576   143.78616
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.01824    11.70000     9.26209
+     0.00635   262.32401
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.02088   -18.30000   -15.49442
+     0.00631     2.55082
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.02352     4.20000     3.05012
+     0.00667    10.40572
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.02617   -10.80000    -9.14743
+     0.00663    94.62666
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.02881    -3.29999    -3.02525
+     0.00673    43.61275
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.03145   -90.00000   -71.10556
+     0.00042   311.00433
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.03409    86.70000    70.44107
+     0.00034   129.61554
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.03673   -85.80000   -69.80287
+     0.00054   231.91235
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.03938    79.20000    69.18863
+     0.00054    81.19875
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.04202   -78.30000   -68.59608
+     0.00083   224.77623
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.04466    71.70000    68.02350
+     0.00082   133.97827
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.04730   -70.80000   -67.46933
+     0.00121   225.37241
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.04995    64.20000    60.33437
+     0.00120   111.67145
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.05259   -63.30000   -59.94283
+     0.00170   212.24396
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.05523    56.70000    54.23652
+     0.00169   347.61963
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.05787   -55.80000   -53.92879
+     0.00229   347.94193
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.06052    49.20000    49.01127
+     0.00228    65.16421
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.06316   -48.30000   -44.57192
+     0.00296   221.56688
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.06580    41.70000    40.47959
+     0.00294    14.31519
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.06844   -40.80000   -40.29320
+     0.00367   168.58080
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.07109    34.20000    33.03336
+     0.00365   123.83549
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.07373   -33.30001   -32.89247
+     0.00437   223.56598
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.07637    26.70001    26.27311
+     0.00434    33.21119
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.07901   -25.80001   -23.07839
+     0.00499    57.16587
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.08165    19.20001    17.03129
+     0.00496    53.66061
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.08430   -18.30000   -16.96597
+     0.00547    51.29850
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.08694    11.70000    11.17550
+     0.00543   149.80571
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.08958   -10.80000    -8.32712
+     0.00575   311.40375
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.09222     4.20000     2.75684
+     0.00572   330.81055
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.09487    -3.30001    -2.74674
+     0.00580    34.84119
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.09751    86.70000    65.11919
+     0.00030   259.26215
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.10015   -90.00000   -72.07578
+     0.00036   163.51753
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.10279    79.20000    71.44591
+     0.00047   154.75372
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.10544   -85.80000   -70.84063
+     0.00047   117.26920
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.10808    71.70000    70.25767
+     0.00072    61.44942
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.11072   -78.30000   -69.69506
+     0.00071   185.16931
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.11336    64.20000    62.59758
+     0.00105   229.00310
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.11601   -70.80000   -68.62431
+     0.00104    48.11407
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.11865    56.70000    56.62952
+     0.00147   154.00601
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.12129   -63.30000   -61.45338
+     0.00146    25.10910
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.12393    49.20000    47.48830
+     0.00198   281.21503
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.12657   -55.80000   -55.72962
+     0.00197    10.63186
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.12922    41.70000    39.83022
+     0.00256   210.43927
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.13186   -48.30000   -46.84317
+     0.00255   354.07742
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.13450    34.20000    33.04021
+     0.00318   311.85153
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.13714   -40.80000   -39.33957
+     0.00316   345.13165
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.13979    26.70001    23.96155
+     0.00379   129.67041
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.14243   -33.30001   -32.66005
+     0.00376     0.72582
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.14507    19.20001    18.28415
+     0.00433   116.02528
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.14771   -25.80001   -23.70350
+     0.00430   136.59840
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.15036    11.70000    10.25717
+     0.00474   341.83560
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.15300   -18.30000   -18.09369
+     0.00472   146.06593
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.15564     4.20000     2.53440
+     0.00499   148.19730
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.15828   -10.80000   -10.15362
+     0.00496    72.34933
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.16093    -3.29999    -2.51758
+     0.00504    14.88861
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.16357   -90.00000   -66.83809
+     0.00032   128.22229
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.16621    86.70000    66.40134
+     0.00026   298.55988
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.16885   -85.80000   -65.97504
+     0.00041   264.47391
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.17149    79.20000    72.50389
+     0.00041    99.70179
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.17414   -78.30000   -71.92195
+     0.00062   225.07809
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.17678    71.70000    71.36147
+     0.00062   303.99387
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.17942   -70.80000   -64.36418
+     0.00091   128.44374
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.18206    64.20000    63.98275
+     0.00091   187.45505
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.18471   -63.30000   -58.55326
+     0.00128    42.16059
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.18735    56.70000    53.88943
+     0.00127    53.83601
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.18999   -55.80000   -53.64029
+     0.00173   237.75874
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.19263    49.20000    45.91079
+     0.00172    52.78587
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.19528   -48.30000   -45.72430
+     0.00223   306.96146
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.19792    41.70000    39.03293
+     0.00222    95.96201
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.20056   -40.80000   -38.88743
+     0.00277    62.34097
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.20320    34.20000    32.84629
+     0.00276    21.01023
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.20585   -33.30001   -32.73122
+     0.00330    64.73355
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.20849    26.70001    24.49616
+     0.00329   313.25864
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.21113   -25.80001   -24.41551
+     0.00378   228.11801
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.21377    19.20001    16.76546
+     0.00376   164.27861
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.21641   -18.30000   -16.71251
+     0.00414   172.88657
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.21906    11.70000     9.42887
+     0.00412   246.82968
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.22170   -10.80000    -9.39988
+     0.00436   155.26671
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.22434     4.20000     2.33299
+     0.00434    39.94265
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.22698    -3.30001    -2.32592
+     0.00441   271.43939
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.22963    86.70000    68.53096
+     0.00022    90.10650
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.23227   -90.00000   -68.09750
+     0.00028    10.41647
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.23491    79.20000    67.67477
+     0.00036   253.55411
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.23755   -85.80000   -67.26217
+     0.00036    29.53627
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.24020    71.70000    66.85909
+     0.00054   145.35887
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.24284   -78.30000   -73.07340
+     0.00054   218.88702
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.24548    64.20000    60.97008
+     0.00080   254.68446
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.24812   -70.80000   -65.70244
+     0.00079   234.44632
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.25077    56.70000    56.07066
+     0.00112   357.85101
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.25341   -63.30000   -60.07711
+     0.00112   307.46863
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.25605    49.20000    48.27359
+     0.00151    98.14049
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.25869   -55.80000   -55.33570
+     0.00151    99.60844
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.26133    41.70000    41.59846
+     0.00196    39.21846
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.26398   -48.30000   -47.72064
+     0.00195   234.33591
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.26662    34.20000    32.92929
+     0.00243    69.23962
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.26926   -40.80000   -38.27833
+     0.00242    25.68636
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.27190    26.70001    25.13031
+     0.00290    66.01088
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.27455   -33.30001   -32.61303
+     0.00289    51.24503
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.27719    19.20001    17.88487
+     0.00332    88.97362
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.27983   -25.80001   -24.90257
+     0.00330    45.31511
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.28247    11.70000    11.00294
+     0.00364    45.75378
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.28512   -18.30000   -17.72915
+     0.00362   340.46582
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.28776     4.20000     2.17537
+     0.00384   265.07544
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.29040   -10.80000    -8.70860
+     0.00382   337.14999
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.29304    -3.29999    -2.16326
+     0.00388    46.93192
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.29569   -90.00000   -70.23072
+     0.00024   330.64914
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.29833    86.70000    69.79503
+     0.00020   164.05960
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.30097   -85.80000   -69.37067
+     0.00031    41.09156
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.30361    79.20000    68.95695
+     0.00031   290.78873
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.30625   -78.30000   -68.55322
+     0.00048   263.61105
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.30890    71.70000    68.15898
+     0.00048   209.70659
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.31154   -70.80000   -67.77362
+     0.00070   265.95413
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.31418    64.20000    62.40703
+     0.00070   271.83649
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.31682   -63.30000   -62.11238
+     0.00099   179.36406
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.31947    56.70000    53.90387
+     0.00098    81.95248
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.32211   -55.80000   -53.69347
+     0.00134   247.80533
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.32475    49.20000    46.94010
+     0.00133    91.11108
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.32739   -48.30000   -46.77681
+     0.00173   262.89322
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.33004    41.70000    40.84980
+     0.00172   118.48286
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.33268   -40.80000   -40.71860
+     0.00215   326.65521
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.33532    34.20000    32.83241
+     0.00214   333.35953
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.33796   -33.30001   -32.73507
+     0.00256   318.07928
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.34061    26.70001    25.56075
+     0.00255     4.85364
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.34325   -25.80001   -25.48902
+     0.00293   289.83505
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.34589    19.20001    18.77854
+     0.00292   308.55447
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.34853   -18.30000   -16.58267
+     0.00322   312.10895
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.35117    11.70000    10.24812
+     0.00321   171.60182
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.35382   -10.80000   -10.22132
+     0.00339   151.32002
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.35646     4.20000     4.05978
+     0.00338   329.09061
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.35910    -3.30001    -2.02340
+     0.00343   173.01521
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.36174    86.70000    71.96407
+     0.00017   337.57242
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.36439   -90.00000   -71.51958
+     0.00022   277.69357
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.36703    79.20000    71.08759
+     0.00028   306.14816
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.36967   -85.80000   -70.66718
+     0.00028    78.07594
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.37231    71.70000    70.25764
+     0.00043   323.66525
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.37496   -78.30000   -69.85825
+     0.00042     5.54356
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.37760    64.20000    60.12454
+     0.00062   113.07582
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.38024   -70.80000   -69.08768
+     0.00062   323.30551
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.38288    56.70000    55.92007
+     0.00088   279.98123
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.38552   -63.30000   -59.38553
+     0.00087   213.55385
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.38817    49.20000    49.06512
+     0.00119   218.05452
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.39081   -55.80000   -55.29424
+     0.00118    30.78387
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.39345    41.70000    40.48191
+     0.00154   247.97621
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.39609   -48.30000   -45.70676
+     0.00153    59.64415
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.39874    34.20000    32.95708
+     0.00191   162.67375
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.40138   -40.80000   -40.12277
+     0.00190   104.31559
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.40402    26.70001    26.09401
+     0.00228    97.81764
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.40666   -33.30001   -32.68550
+     0.00227   355.45581
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.40931    19.20001    17.63947
+     0.00261   247.13914
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.41195   -25.80001   -23.76930
+     0.00260   333.05820
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.41459    11.70000    11.59778
+     0.00286   173.33517
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.41723   -18.30000   -17.50762
+     0.00285   302.06424
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.41988     4.20000     3.82394
+     0.00302   222.75859
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.42252   -10.80000    -9.57435
+     0.00301   299.36441
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.42516    -3.29999    -1.90176
+     0.00305   219.12920
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.42780   -90.00000   -73.75912
+     0.00019    66.20167
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.43044    86.70000    73.29764
+     0.00015   260.71796
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.43309   -85.80000   -72.85046
+     0.00025   236.56673
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.43573    79.20000    72.41651
+     0.00025   111.51208
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.43837   -78.30000   -71.99484
+     0.00038    79.99124
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.44101    71.70000    71.58455
+     0.00038   257.28531
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.44366   -70.80000   -66.05350
+     0.00056   140.16919
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.44630    64.20000    61.54870
+     0.00055   267.22900
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.44894   -63.30000   -61.30288
+     0.00078   252.31004
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.45158    56.70000    54.12571
+     0.00078    97.37813
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.45423   -55.80000   -53.94222
+     0.00106    19.67658
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.45687    49.20000    47.90446
+     0.00105   128.24490
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.45951   -48.30000   -47.75825
+     0.00137   309.77377
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.46215    41.70000    39.96130
+     0.00136   129.75003
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.46480   -40.80000   -39.85115
+     0.00170   243.27954
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.46744    34.20000    32.91733
+     0.00170   146.13498
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.47008   -33.30001   -32.83265
+     0.00203   241.50171
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.47272    26.70001    26.45468
+     0.00202     8.10681
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.47536   -25.80001   -24.37639
+     0.00233     3.81507
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.47801    19.20001    18.46737
+     0.00232   197.37349
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.48065   -18.30000   -16.52560
+     0.00256    16.54396
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.48329    11.70000    10.90620
+     0.00255   113.23070
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.48593   -10.80000    -9.05100
+     0.00270   238.81245
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.48858     4.20000     3.59964
+     0.00269   156.42143
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.49122    -3.30001    -1.79491
+     0.00273   338.69458
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.49386    86.70000    69.64600
+     0.00014    85.08940
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.49650   -90.00000   -75.16284
+     0.00017   110.38890
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.49915    79.20000    74.69012
+     0.00022   222.31947
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.50179   -85.80000   -74.23343
+     0.00022   342.66626
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.50443    71.70000    68.32217
+     0.00034   282.58041
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.50707   -78.30000   -73.36275
+     0.00034    39.11682
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.50972    64.20000    63.42529
+     0.00050     8.11369
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.51236   -70.80000   -67.39313
+     0.00050   336.01828
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.51500    56.70000    55.99939
+     0.00070   138.74199
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.51764   -63.30000   -62.68533
+     0.00070   134.80615
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.52028    49.20000    47.19841
+     0.00095   227.62350
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.52293   -55.80000   -55.45026
+     0.00094    53.56833
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.52557    41.70000    39.73353
+     0.00123   276.73441
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.52821   -48.30000   -46.79910
+     0.00122    87.59799
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.53085    34.20000    33.06166
+     0.00153   242.89909
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.53350   -40.80000   -39.42723
+     0.00152   141.64058
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.53614    26.70001    24.99197
+     0.00182    12.32161
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.53878   -33.30001   -32.82275
+     0.00182    56.31808
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.54142    19.20001    17.48718
+     0.00209   170.16217
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.54407   -25.80001   -24.82163
+     0.00208   138.34515
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.54671    11.70000    10.34240
+     0.00230    58.44733
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.54935   -18.30000   -17.37257
+     0.00229   351.10812
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.55199     4.20000     3.41632
+     0.00242   259.49612
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.55464   -10.80000   -10.27632
+     0.00241   297.37488
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.55728    -3.29999    -1.70022
+     0.00245   301.76367
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.55992   -90.00000   -71.34354
+     0.00015   114.88189
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.56256    86.70000    70.99191
+     0.00012    23.39679
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.56520   -85.80000   -70.64796
+     0.00020    66.54186
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.56785    79.20000    70.31129
+     0.00020   122.16383
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.57049   -78.30000   -75.68343
+     0.00030   169.96236
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.57313    71.70000    69.65833
+     0.00030   212.74271
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.57577   -70.80000   -69.34138
+     0.00045   303.65778
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.57842    64.20000    61.09348
+     0.00045   104.90530
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.58106   -63.30000   -60.88084
+     0.00063   123.95853
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.58370    56.70000    54.45864
+     0.00063    41.97053
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.58634   -55.80000   -54.29482
+     0.00085   239.49069
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.58899    49.20000    48.80643
+     0.00085   135.47588
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.59163   -48.30000   -46.22590
+     0.00111   156.38638
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.59427    41.70000    41.52579
+     0.00110    87.16335
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.59691   -40.80000   -39.26049
+     0.00138   141.59531
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.59956    34.20000    33.05502
+     0.00137   346.83505
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.60220   -33.30001   -32.97979
+     0.00164   274.55017
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.60484    26.70001    25.39646
+     0.00164   130.94417
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.60748   -25.80001   -25.34183
+     0.00188   285.76877
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.61012    19.20001    18.25524
+     0.00188   224.01979
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.61277   -18.30000   -18.21745
+     0.00207   338.79782
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.61541    11.70000    11.45193
+     0.00206    28.86590
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.61805   -10.80000    -9.77871
+     0.00219   185.96756
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.62069     4.20000     3.23905
+     0.00218   240.07677
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.62334    -3.30001    -3.23263
+     0.00221   346.76361
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.62598    86.70000    73.08453
+     0.00011    65.68312
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.62862   -90.00000   -72.71677
+     0.00014    69.76045
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.63126    79.20000    72.35793
+     0.00018   326.88193
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.63391   -85.80000   -72.00751
+     0.00018   118.63533
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.63655    71.70000    71.66499
+     0.00028   125.67701
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.63919   -78.30000   -71.32994
+     0.00027   194.64178
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.64183    64.20000    62.86200
+     0.00040   273.74872
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.64448   -70.80000   -70.68067
+     0.00040   323.92844
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.64712    56.70000    56.20676
+     0.00057   109.40135
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.64976   -63.30000   -62.21903
+     0.00057    72.56215
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.65240    49.20000    48.16362
+     0.00077   207.41505
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.65504   -55.80000   -55.71434
+     0.00077   172.43922
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.65769    41.70000    41.27845
+     0.00100   253.79068
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.66033   -48.30000   -47.79606
+     0.00100   289.16034
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.66297    34.20000    33.20651
+     0.00124   139.12570
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.66561   -40.80000   -38.94711
+     0.00124   296.48874
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.66826    26.70001    25.87788
+     0.00149     8.72044
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.67090   -33.30001   -32.99250
+     0.00148   104.12603
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.67354    19.20001    19.03204
+     0.00171   308.04791
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.67618   -25.80001   -25.71987
+     0.00170   340.85022
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.67883    11.70000    10.92381
+     0.00188   101.57009
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.68147   -18.30000   -17.29124
+     0.00187    49.70156
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.68411     4.20000     3.09203
+     0.00198   104.29654
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.68675   -10.80000    -9.29486
+     0.00197   258.17969
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.68940    -3.29999    -3.08041
+     0.00201   109.66658
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.69204   -90.00000   -74.89816
+     0.00013   276.10599
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.69468    86.70000    74.50656
+     0.00010   352.20813
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.69732   -85.80000   -74.12594
+     0.00016    79.13695
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.69996    79.20000    73.75547
+     0.00016    59.60469
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.70261   -78.30000   -73.39448
+     0.00025    58.06248
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.70525    71.70000    68.42706
+     0.00025   134.01920
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.70789   -70.80000   -68.16084
+     0.00037    40.21464
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.71053    64.20000    64.16438
+     0.00037    80.75324
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.71318   -63.30000   -60.68821
+     0.00052   319.98111
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.71582    56.70000    54.84702
+     0.00051     8.26075
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.71846   -55.80000   -54.69819
+     0.00070   234.61342
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.72110    49.20000    47.37420
+     0.00070   144.27235
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.72375   -48.30000   -47.26070
+     0.00091   331.35269
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.72639    41.70000    40.88660
+     0.00090   285.43546
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.72903   -40.80000   -40.79650
+     0.00113   334.52628
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.73167    34.20000    33.21888
+     0.00113   117.80851
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.73432   -33.30001   -33.15100
+     0.00135   174.80238
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.73696    26.70001    26.22430
+     0.00135   206.31195
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.73960   -25.80001   -24.52835
+     0.00155   204.82704
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.74224    19.20001    18.10729
+     0.00154   166.34941
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.74488   -18.30000   -18.07366
+     0.00170    52.71486
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.74753    11.70000    10.40755
+     0.00170   118.61585
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.75017   -10.80000   -10.38874
+     0.00180   266.00308
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.75281     4.20000     2.94801
+     0.00179   114.32871
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.75545    -3.30001    -2.94275
+     0.00182   321.05731
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.75810    86.70000    76.82815
+     0.00009   116.45042
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.76074   -90.00000   -76.40073
+     0.00011   138.20862
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.76338    79.20000    75.98763
+     0.00015   308.22760
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.76602   -85.80000   -75.58763
+     0.00015    13.86833
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.76867    71.70000    70.28445
+     0.00023   198.33711
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.77131   -78.30000   -74.82279
+     0.00023    90.83645
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.77395    64.20000    62.54411
+     0.00033   326.45316
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.77659   -70.80000   -69.46018
+     0.00033   299.08887
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.77923    56.70000    56.48405
+     0.00047   239.01630
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.78188   -63.30000   -61.97197
+     0.00047   275.56155
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.78452    49.20000    49.05133
+     0.00064   353.07513
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.78716   -55.80000   -53.53783
+     0.00063   169.38629
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.78980    41.70000    40.71664
+     0.00083   126.01547
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.79245   -48.30000   -46.57926
+     0.00082   332.47241
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.79509    34.20000    33.37067
+     0.00103   336.63745
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.79773   -40.80000   -40.46184
+     0.00103   145.62961
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.80037    26.70001    26.64707
+     0.00123   326.11053
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.80302   -33.30001   -33.17628
+     0.00123   321.12549
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.80566    19.20001    18.83238
+     0.00141   168.01598
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.80830   -25.80001   -24.92309
+     0.00141   218.91193
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.81094    11.70000    11.41814
+     0.00155    17.52829
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.81359   -18.30000   -17.24421
+     0.00155   107.87137
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.81623     4.20000     2.82717
+     0.00164    18.73730
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.81887   -10.80000    -9.92382
+     0.00164   148.44972
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.82151    -3.29999    -2.81757
+     0.00166    17.25542
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.82415   -90.00000   -73.12141
+     0.00011   256.61636
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.82680    86.70000    72.80529
+     0.00008   248.51648
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.82944   -85.80000   -72.49582
+     0.00014   218.80624
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.83208    79.20000    72.19263
+     0.00013   316.54642
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.83472   -78.30000   -77.12601
+     0.00021   172.69508
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.83737    71.70000    71.60390
+     0.00021     4.17122
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.84001   -70.80000   -67.37160
+     0.00030   109.16701
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.84265    64.20000    63.79612
+     0.00030   280.81329
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.84529   -63.30000   -60.63619
+     0.00043    57.97688
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.84794    56.70000    55.25896
+     0.00043   322.20682
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.85058   -55.80000   -55.12200
+     0.00058   164.93120
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.85322    49.20000    48.30925
+     0.00058   353.76727
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.85586   -48.30000   -48.20293
+     0.00076   100.49417
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.85851    41.70000    40.40924
+     0.00075   314.48349
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.86115   -40.80000   -40.32888
+     0.00094   311.22708
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.86379    34.20000    33.39372
+     0.00094    82.78590
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.86643   -33.30001   -31.70828
+     0.00113   158.18674
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.86907    26.70001    25.42485
+     0.00112   231.08084
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.87172   -25.80001   -25.38029
+     0.00129   262.07147
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.87436    19.20001    18.00237
+     0.00129    52.74094
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.87700   -18.30000   -17.97201
+     0.00142   297.99887
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.87964    11.70000    10.92765
+     0.00142   183.24811
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.88229   -10.80000    -9.53231
+     0.00150     9.45018
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.88493     4.20000     4.06326
+     0.00150    49.71585
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.88757    -3.30001    -2.70320
+     0.00152    73.90163
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.89021    86.70000    74.85368
+     0.00008    65.69341
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.89286   -90.00000   -74.51598
+     0.00010   206.51566
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.89550    79.20000    74.18642
+     0.00012   316.79764
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.89814   -85.80000   -73.86450
+     0.00012    58.78001
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.90078    71.70000    69.33737
+     0.00019   209.58475
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.90343   -78.30000   -73.24183
+     0.00019   145.90948
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.90607    64.20000    62.38083
+     0.00028   157.00534
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.90871   -70.80000   -68.62180
+     0.00028    84.85027
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.91135    56.70000    54.43906
+     0.00039    87.41759
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.91399   -63.30000   -61.86287
+     0.00039   174.68863
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.91664    49.20000    47.85149
+     0.00053   114.66987
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.91928   -55.80000   -54.05981
+     0.00053   229.49373
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.92192    41.70000    40.29174
+     0.00069   331.88165
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.92456   -48.30000   -47.55247
+     0.00069   259.08774
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.92721    34.20000    33.54210
+     0.00086    23.10108
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.92985   -40.80000   -40.06281
+     0.00086   192.24239
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.93249    26.70001    25.85282
+     0.00103    12.38824
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.93513   -33.30001   -31.80539
+     0.00103    32.83789
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.93778    19.20001    18.68121
+     0.00118    38.12947
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.94042   -25.80001   -25.72275
+     0.00118   227.78363
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.94306    11.70000    10.51302
+     0.00130   223.37627
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.94570   -18.30000   -17.21956
+     0.00130   235.88347
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.94835     4.20000     3.91115
+     0.00138   251.24960
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.95099   -10.80000   -10.46353
+     0.00137    29.29156
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.95363    -3.29999    -2.59823
+     0.00140   212.56602
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.95627   -90.00000   -76.68845
+     0.00009    55.34185
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.95891    86.70000    76.31967
+     0.00007   206.23030
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.96156   -85.80000   -75.96157
+     0.00011   222.24742
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.96420    79.20000    75.61331
+     0.00011   105.24234
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.96684   -78.30000   -75.27422
+     0.00017   192.77200
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.96948    71.70000    70.59838
+     0.00017    17.82611
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.97213   -70.80000   -70.35094
+     0.00026    84.09839
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.97477    64.20000    63.57959
+     0.00026   153.25548
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.97741   -63.30000   -60.67232
+     0.00036   155.04416
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.98005    56.70000    55.67618
+     0.00036    96.70125
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.98270   -55.80000   -55.54882
+     0.00049   105.69844
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.98534    49.20000    49.16524
+     0.00049   249.69725
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.98798   -48.30000   -47.15813
+     0.00064   335.65454
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.99062    41.70000    40.04446
+     0.00063   220.18410
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.99327   -40.80000   -39.97179
+     0.00079   226.67581
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.99591    34.20000    33.57083
+     0.00079    28.90328
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     1.99855   -33.30001   -32.00882
+     0.00095   189.94600
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.00119    26.70001    26.17055
+     0.00095    43.49968
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.00383   -25.80001   -24.73133
+     0.00109   252.80669
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.00648    19.20001    17.92710
+     0.00109   312.36264
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.00912   -18.30000   -17.89939
+     0.00120   177.95898
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.01176    11.70000    11.37824
+     0.00120   298.15854
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.01440   -10.80000   -10.08466
+     0.00127   331.19131
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.01705     4.20000     3.75935
+     0.00126    55.83530
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.01969    -3.30001    -2.50151
+     0.00129   265.66119
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.02233    86.70000    73.49261
+     0.00007   172.17267
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.02497   -90.00000   -73.20879
+     0.00008   346.74844
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.02762    79.20000    77.87048
+     0.00010    54.50103
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.03026   -85.80000   -77.48323
+     0.00010   299.42615
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.03290    71.70000    68.66525
+     0.00016   320.14590
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.03554   -78.30000   -76.74556
+     0.00016    42.39669
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.03819    64.20000    62.31783
+     0.00024   290.80231
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.04083   -70.80000   -68.02909
+     0.00024   198.81683
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.04347    56.70000    54.91900
+     0.00033   206.96146
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.04611   -63.30000   -61.84279
+     0.00033   236.83011
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.04875    49.20000    48.72356
+     0.00045   226.29416
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.05140   -55.80000   -54.56408
+     0.00045   325.24783
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.05404    41.70000    41.58342
+     0.00059    78.76108
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.05668   -48.30000   -46.62572
+     0.00058   275.70782
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.05932    34.20000    33.71389
+     0.00073   213.93701
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.06197   -40.80000   -39.75537
+     0.00073   352.64493
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.06461    26.70001    26.55207
+     0.00088   283.97052
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.06725   -33.30001   -32.09930
+     0.00087   180.26578
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.06989    19.20001    18.56461
+     0.00101    49.71760
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.07254   -25.80001   -25.08030
+     0.00100   158.27751
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.07518    11.70000    10.98055
+     0.00111   293.69839
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.07782   -18.30000   -17.20977
+     0.00110   315.81729
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.08046     4.20000     3.62983
+     0.00117   255.88063
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.08311   -10.80000    -9.70561
+     0.00117    13.45760
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.08575    -3.29999    -2.41208
+     0.00119   171.87508
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.08839   -90.00000   -75.15163
+     0.00008    20.96018
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.09103    86.70000    74.84735
+     0.00006   169.05225
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.09367   -85.80000   -74.54976
+     0.00010   200.98166
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.09632    79.20000    74.25857
+     0.00010   304.97714
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.09896   -78.30000   -73.97331
+     0.00015    71.94260
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.10160    71.70000    69.86935
+     0.00015   181.55159
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.10424   -70.80000   -69.64994
+     0.00022   196.74127
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.10689    64.20000    63.46386
+     0.00022    98.41927
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.10953   -63.30000   -60.76424
+     0.00031   236.47260
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.11217    56.70000    56.08817
+     0.00031   248.74458
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.11481   -55.80000   -53.90243
+     0.00042    70.45309
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.11746    49.20000    48.14326
+     0.00042   281.15738
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.12010   -48.30000   -48.05392
+     0.00054   108.34801
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.12274    41.70000    41.31587
+     0.00054   346.53488
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.12538   -40.80000   -39.69396
+     0.00068   186.70131
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.12803    34.20000    33.74525
+     0.00067    18.88874
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.13067   -33.30001   -32.28858
+     0.00081   258.35275
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.13331    26.70001    25.52200
+     0.00081   185.62982
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.13595   -25.80001   -25.48411
+     0.00093   136.57265
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.13859    19.20001    19.10888
+     0.00093   178.62862
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.14124   -18.30000   -17.84723
+     0.00102   221.57259
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.14388    11.70000    10.58153
+     0.00102   290.46472
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.14652   -10.80000   -10.56679
+     0.00108   102.83021
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.14916     4.20000     3.49969
+     0.00108    37.07877
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.15181    -3.30001    -2.32912
+     0.00110   269.08493
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.15445    86.70000    76.90929
+     0.00006   197.47394
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.15709   -90.00000   -76.57623
+     0.00007   184.30107
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.15973    79.20000    76.25201
+     0.00009    77.05180
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.16238   -85.80000   -75.93601
+     0.00009   207.63040
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.16502    71.70000    71.53582
+     0.00014   126.69449
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.16766   -78.30000   -75.32655
+     0.00014   349.53528
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.17030    64.20000    62.32115
+     0.00020   297.39816
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.17295   -70.80000   -67.60241
+     0.00020   346.85092
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.17559    56.70000    55.38120
+     0.00029   320.65756
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.17823   -63.30000   -61.88111
+     0.00028   261.29663
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.18087    49.20000    47.78735
+     0.00039    90.12887
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.18351   -55.80000   -55.04680
+     0.00039    10.19628
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.18616    41.70000    41.20889
+     0.00050    64.52398
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.18880   -48.30000   -47.53317
+     0.00050   277.07074
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.19144    34.20000    33.88212
+     0.00063   121.59135
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.19408   -40.80000   -39.51444
+     0.00062   256.68832
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.19673    26.70001    25.90319
+     0.00075   122.95443
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.19937   -33.30001   -32.37239
+     0.00075   172.90410
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.20201    19.20001    18.47328
+     0.00086    14.15705
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.20465   -25.80001   -25.79198
+     0.00086    95.06834
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.20730    11.70000    11.39149
+     0.00095   123.69859
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.20994   -18.30000   -17.20995
+     0.00095    94.47556
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.21258     4.20000     3.38794
+     0.00100   309.52972
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.21522   -10.80000   -10.19820
+     0.00100   228.46765
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.21786    -3.29999    -2.25192
+     0.00102   121.62289
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.22051   -90.00000   -74.03142
+     0.00006   337.81702
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.22315    86.70000    78.44677
+     0.00005   205.65546
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.22579   -85.80000   -78.08316
+     0.00008   194.51935
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.22843    79.20000    77.73111
+     0.00008   123.82819
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.23108   -78.30000   -77.38968
+     0.00013   230.76845
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.23372    71.70000    69.32747
+     0.00013   305.11279
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.23636   -70.80000   -69.12946
+     0.00019   139.64668
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.23900    64.20000    63.41656
+     0.00019   245.01576
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.24165   -63.30000   -63.26739
+     0.00026    75.52849
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.24429    56.70000    56.48900
+     0.00026   115.72375
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.24693   -55.80000   -54.42247
+     0.00036   341.65021
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.24957    49.20000    48.96003
+     0.00036   197.71559
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.25222   -48.30000   -47.21919
+     0.00047   328.96069
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.25486    41.70000    40.98390
+     0.00047    23.15192
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.25750   -40.80000   -39.47437
+     0.00058   126.19912
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.26014    34.20000    33.91427
+     0.00058   197.91963
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.26278   -33.30001   -32.54871
+     0.00070    99.19508
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.26543    26.70001    26.19146
+     0.00069   246.14807
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.26807   -25.80001   -24.93806
+     0.00080    14.08790
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.27071    19.20001    18.98935
+     0.00080   357.20810
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.27335   -18.30000   -17.80981
+     0.00088   233.56432
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.27600    11.70000    11.00626
+     0.00088   263.40305
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.27864   -10.80000    -9.88113
+     0.00093   248.60487
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.28128     4.20000     3.27500
+     0.00093   165.22191
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.28392    -3.30001    -3.27081
+     0.00095   346.54312
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.28657    86.70000    75.62807
+     0.00005   223.40633
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.28921   -90.00000   -75.34605
+     0.00006   245.97200
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.29185    79.20000    75.06988
+     0.00008   153.99706
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.29449   -85.80000   -74.79937
+     0.00008   312.07883
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.29714    71.70000    70.88995
+     0.00012   158.29266
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.29978   -78.30000   -74.27399
+     0.00012   305.12326
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.30242    64.20000    62.36880
+     0.00017   284.50201
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.30506   -70.80000   -70.27283
+     0.00017   277.22482
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.30770    56.70000    55.82323
+     0.00025   359.09802
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.31035   -63.30000   -61.95793
+     0.00025    20.67132
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.31299    49.20000    48.60825
+     0.00033   265.43469
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.31563   -55.80000   -55.50647
+     0.00033    37.57839
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.31827    41.70000    40.90323
+     0.00043   266.57056
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.32092   -48.30000   -46.77766
+     0.00043   147.47092
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.32356    34.20000    34.04462
+     0.00054   289.19138
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.32620   -40.80000   -40.71741
+     0.00054   197.32150
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.32884    26.70001    26.53555
+     0.00065    25.68388
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.33149   -33.30001   -32.62606
+     0.00065   306.35361
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.33413    19.20001    18.40081
+     0.00074   276.30783
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.33677   -25.80001   -25.24830
+     0.00074    16.62267
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.33941    11.70000    10.67413
+     0.00082   313.17163
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.34206   -18.30000   -17.21687
+     0.00082   347.80634
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.34470     4.20000     3.17749
+     0.00087     1.10965
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.34734   -10.80000   -10.63408
+     0.00087   283.97116
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.34998    -3.29999    -3.16964
+     0.00088   211.13698
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.35262   -90.00000   -77.32463
+     0.00006   193.28323
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.35527    86.70000    77.01470
+     0.00004   215.94566
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.35791   -85.80000   -76.71269
+     0.00007   112.62634
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.36055    79.20000    76.41807
+     0.00007   226.17838
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.36319   -78.30000   -76.13020
+     0.00011   135.81325
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.36584    71.70000    68.91750
+     0.00011   241.25452
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.36848   -70.80000   -68.73647
+     0.00016   316.59540
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.37112    64.20000    63.41644
+     0.00016    16.28781
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.37376   -63.30000   -63.27713
+     0.00023   349.05316
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.37641    56.70000    55.01269
+     0.00023    65.88851
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.37905   -55.80000   -54.91321
+     0.00031   264.50470
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.38169    49.20000    48.12821
+     0.00031   146.20457
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.38433   -48.30000   -48.05072
+     0.00040     0.39316
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.38698    41.70000    40.71115
+     0.00040   258.00177
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.38962   -40.80000   -40.65151
+     0.00050   164.43922
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.39226    34.20000    34.07644
+     0.00050     5.47364
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.39490   -33.30001   -32.79057
+     0.00060   337.86267
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.39754    26.70001    25.64116
+     0.00060   249.64854
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.40019   -25.80001   -25.60806
+     0.00069   145.20331
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.40283    19.20001    18.89106
+     0.00069   268.67322
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.40547   -18.30000   -17.78316
+     0.00077   124.74149
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.40811    11.70000    11.38407
+     0.00076    36.82889
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.41076   -10.80000   -10.32466
+     0.00081    87.33993
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.41340     4.20000     4.10615
+     0.00081    25.54153
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.41604    -3.30001    -3.07478
+     0.00082   275.20197
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.41868    86.70000    74.65606
+     0.00004   273.31479
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.42133   -90.00000   -78.82592
+     0.00005   258.44009
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.42397    79.20000    78.48586
+     0.00007    81.89899
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.42661   -85.80000   -78.15624
+     0.00007   185.97792
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.42925    71.70000    70.39051
+     0.00010    19.78558
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.43190   -78.30000   -77.52505
+     0.00010   349.94312
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.43454    64.20000    62.44619
+     0.00015   183.56012
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.43718   -70.80000   -69.82775
+     0.00015   311.39005
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.43982    56.70000    56.24424
+     0.00021    27.52889
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.44246   -63.30000   -62.06009
+     0.00021    87.12798
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.44511    49.20000    47.83503
+     0.00029   234.42213
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.44775   -55.80000   -54.17927
+     0.00029   270.96024
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.45039    41.70000    40.65032
+     0.00038     1.74533
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.45303   -48.30000   -47.61277
+     0.00038     8.71938
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.45568    34.20000    32.99203
+     0.00047    53.03279
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.45832   -40.80000   -40.47778
+     0.00047   345.88968
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.46096    26.70001    25.98299
+     0.00056     2.32424
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.46360   -33.30001   -32.86184
+     0.00056   233.47285
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.46625    19.20001    18.34266
+     0.00065   167.67276
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.46889   -25.80001   -24.77844
+     0.00065   211.85759
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.47153    11.70000    11.06187
+     0.00072    57.53228
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.47417   -18.30000   -18.27647
+     0.00071   100.67992
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.47681     4.20000     3.99151
+     0.00076   279.87570
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.47946   -10.80000   -10.00999
+     0.00076   158.66533
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.48210    -3.29999    -2.98564
+     0.00077   293.47455
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.48474   -90.00000   -76.20152
+     0.00005   310.88202
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.48738    86.70000    75.93472
+     0.00004   346.67847
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.49003   -85.80000   -75.67340
+     0.00006   276.63370
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.49267    79.20000    75.41729
+     0.00006   265.13760
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.49531   -78.30000   -75.16609
+     0.00010    97.65234
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.49795    71.70000    71.49922
+     0.00010   296.05646
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.50060   -70.80000   -68.43618
+     0.00014    21.27999
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.50324    64.20000    63.44913
+     0.00014   126.29359
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.50588   -63.30000   -61.20289
+     0.00020    77.97987
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.50852    56.70000    55.47097
+     0.00020     5.89702
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.51117   -55.80000   -55.37601
+     0.00027   254.86235
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.51381    49.20000    48.89130
+     0.00027   180.29678
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.51645   -48.30000   -47.34954
+     0.00035   105.58289
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.51909    41.70000    40.48417
+     0.00035    71.30830
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.52173   -40.80000   -40.42863
+     0.00044   163.09351
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.52438    34.20000    33.05787
+     0.00044   205.74190
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.52702   -33.30001   -33.01561
+     0.00053    46.80820
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.52966    26.70001    26.24457
+     0.00053   118.74345
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.53230   -25.80001   -25.13263
+     0.00061   305.41788
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.53495    19.20001    18.80928
+     0.00061   106.85858
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.53759   -18.30000   -17.76448
+     0.00067    90.61562
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.54023    11.70000    10.73361
+     0.00067   106.56801
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.54287   -10.80000   -10.72139
+     0.00071   104.28104
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.54552     4.20000     3.87457
+     0.00071   230.55450
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.54816    -3.30001    -2.90170
+     0.00072    56.39510
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.55080    86.70000    77.85114
+     0.00004   287.91208
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.55344   -90.00000   -77.55663
+     0.00005     4.48810
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.55609    79.20000    77.26945
+     0.00006   285.30716
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.55873   -85.80000   -76.98916
+     0.00006   261.91785
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.56137    71.70000    69.99797
+     0.00009   196.16032
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.56401   -78.30000   -76.44756
+     0.00009   135.82474
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.56665    64.20000    62.54342
+     0.00013    75.98930
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.56930   -70.80000   -69.47938
+     0.00013    39.21040
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.57194    56.70000    56.64429
+     0.00019   205.34265
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.57458   -63.30000   -62.17871
+     0.00019   215.08902
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.57722    49.20000    48.59732
+     0.00025   162.09387
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.57987   -55.80000   -54.67152
+     0.00025   193.55879
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.58251    41.70000    40.43858
+     0.00033   195.76724
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.58515   -48.30000   -46.96882
+     0.00033   241.24588
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.58779    34.20000    33.20474
+     0.00041   260.29144
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.59044   -40.80000   -40.27742
+     0.00041   167.71150
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.59308    26.70001    26.55631
+     0.00050   282.04526
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.59572   -33.30001   -33.08121
+     0.00049   125.73478
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.59836    19.20001    18.29558
+     0.00057   102.84902
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.60101   -25.80001   -25.41064
+     0.00057   225.40405
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.60365    11.70000    11.41013
+     0.00063   199.74312
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.60629   -18.30000   -18.23343
+     0.00063   279.76788
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.60893     4.20000     3.77276
+     0.00067   355.02762
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.61157   -10.80000   -10.41351
+     0.00066    98.50435
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.61422    -3.29999    -2.82250
+     0.00068    23.02157
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.61686   -90.00000   -75.32368
+     0.00004   314.35779
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.61950    86.70000    79.32666
+     0.00003     5.21889
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.62214   -85.80000   -79.00142
+     0.00006   280.89780
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.62479    79.20000    78.68610
+     0.00006   177.35272
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.62743   -78.30000   -74.40361
+     0.00008   193.79288
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.63007    71.70000    71.05485
+     0.00008   336.55945
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.63271   -70.80000   -68.20491
+     0.00012   342.46707
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.63536    64.20000    63.50467
+     0.00012    27.20991
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.63800   -63.30000   -61.37222
+     0.00018   169.57008
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.64064    56.70000    55.90344
+     0.00018   357.11093
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.64328   -55.80000   -54.19210
+     0.00024   221.98392
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.64593    49.20000    48.18510
+     0.00024   345.03864
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.64857   -48.30000   -48.11639
+     0.00031   317.68866
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.65121    41.70000    41.51887
+     0.00031   230.10196
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.65385   -40.80000   -40.24119
+     0.00039   171.91971
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.65649    34.20000    33.26540
+     0.00039    15.63219
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.65914   -33.30001   -33.22525
+     0.00047    21.53628
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.66178    26.70001    25.76353
+     0.00046   257.94009
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.66442   -25.80001   -25.73405
+     0.00054    65.48601
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.66706    19.20001    18.74054
+     0.00053   275.25745
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.66971   -18.30000   -17.75180
+     0.00059    71.94749
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.67235    11.70000    11.09055
+     0.00059    57.31367
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.67499   -10.80000   -10.14518
+     0.00063   348.08734
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.67763     4.20000     3.66852
+     0.00062   245.35539
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.68028    -3.30001    -2.74765
+     0.00064   270.51334
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.68292    86.70000    76.82862
+     0.00003    28.92027
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.68556   -90.00000   -76.57236
+     0.00004   290.59387
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.68820    79.20000    76.32140
+     0.00005   216.58673
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.69085   -85.80000   -76.07536
+     0.00005    99.12834
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.69349    71.70000    69.68548
+     0.00008   264.14185
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.69613   -78.30000   -75.59719
+     0.00008   271.40039
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.69877    64.20000    62.65362
+     0.00012     9.62574
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.70141   -70.80000   -69.20361
+     0.00012   244.15489
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.70406    56.70000    55.39331
+     0.00017   279.99994
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.70670   -63.30000   -62.30757
+     0.00017    37.37188
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.70934    49.20000    47.93390
+     0.00022    18.00605
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.71198   -55.80000   -55.13387
+     0.00022   129.85339
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.71463    41.70000    41.45348
+     0.00029   192.80946
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.71727   -48.30000   -47.73571
+     0.00029    26.61933
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.71991    34.20000    33.40320
+     0.00037   101.47188
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.72255   -40.80000   -40.10817
+     0.00036   349.02667
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.72520    26.70001    26.07241
+     0.00044   224.85925
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.72784   -33.30001   -33.28563
+     0.00044   181.01114
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.73048    19.20001    18.25715
+     0.00050    28.52417
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.73312   -25.80001   -24.99208
+     0.00050   250.07478
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.73577    11.70000    10.81161
+     0.00056   199.20958
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.73841   -18.30000   -18.19856
+     0.00055    85.70415
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.74105     4.20000     3.57745
+     0.00059   265.46689
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.74369   -10.80000   -10.77777
+     0.00059   152.85555
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.74633    -3.29999    -2.67679
+     0.00060   290.56836
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.74898   -90.00000   -78.44437
+     0.00004    63.96418
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.75162    86.70000    78.15981
+     0.00003   254.71466
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.75426   -85.80000   -77.88242
+     0.00005   251.32407
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.75690    79.20000    77.61175
+     0.00005    23.79944
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.75955   -78.30000   -77.34730
+     0.00007    62.79684
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.76219    71.70000    70.69533
+     0.00007    66.13724
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.76483   -70.80000   -70.52879
+     0.00011    30.73008
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.76747    64.20000    63.57607
+     0.00011   171.38889
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.77012   -63.30000   -61.54461
+     0.00016   312.61124
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.77276    56.70000    56.31163
+     0.00016   297.54889
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.77540   -55.80000   -54.66920
+     0.00021    61.76387
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.77804    49.20000    48.89346
+     0.00021   244.12030
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.78069   -48.30000   -47.50712
+     0.00028    51.73339
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.78333    41.70000    41.29094
+     0.00027   262.46265
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.78597   -40.80000   -40.08203
+     0.00034   214.39870
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.78861    34.20000    33.45909
+     0.00034   319.75586
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.79125   -33.30001   -32.37677
+     0.00041   295.23895
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.79390    26.70001    26.31072
+     0.00041   158.72151
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.79654   -25.80001   -25.31047
+     0.00047   126.35286
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.79918    19.20001    18.68222
+     0.00047    58.39253
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.80182   -18.30000   -17.74364
+     0.00052   225.58812
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.80447    11.70000    11.41382
+     0.00052    83.62403
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.80711   -10.80000   -10.51470
+     0.00055   295.73642
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.80975     4.20000     3.48391
+     0.00055    52.79068
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.81239    -3.30001    -2.60960
+     0.00056   179.05783
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.81504    86.70000    76.01128
+     0.00003    60.21630
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.81768   -90.00000   -79.90519
+     0.00004    60.69423
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.82032    79.20000    75.55872
+     0.00005    91.08389
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.82296   -85.80000   -79.28159
+     0.00005    30.69335
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.82561    71.70000    69.43428
+     0.00007   198.79141
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.82825   -78.30000   -74.90807
+     0.00007    61.28996
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.83089    64.20000    62.77202
+     0.00010    47.85100
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.83353   -70.80000   -68.98353
+     0.00010    55.75603
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.83617    56.70000    55.81854
+     0.00015    39.51819
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.83882   -63.30000   -62.44242
+     0.00015   302.55344
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.84146    49.20000    48.63943
+     0.00020    77.35526
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.84410   -55.80000   -55.56876
+     0.00020    95.79098
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.84674    41.70000    41.23825
+     0.00026    86.77591
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.84939   -48.30000   -47.17006
+     0.00026   159.67830
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.85203    34.20000    33.58862
+     0.00032   231.75177
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.85467   -40.80000   -39.96388
+     0.00032   250.42429
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.85731    26.70001    26.59482
+     0.00039   150.75993
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.85996   -33.30001   -32.45829
+     0.00039   292.67053
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.86260    19.20001    19.12633
+     0.00045    19.64514
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.86524   -25.80001   -25.56158
+     0.00045    50.38541
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.86788    11.70000    11.14151
+     0.00049   354.19214
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.87053   -18.30000   -18.17012
+     0.00049    88.85770
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.87317     4.20000     3.40192
+     0.00052   209.55252
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.87581   -10.80000   -10.24429
+     0.00052    29.91213
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.87845    -3.29999    -2.54580
+     0.00053   288.56790
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.88109   -90.00000   -77.48562
+     0.00003   341.01956
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.88374    86.70000    77.23647
+     0.00003   354.66898
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.88638   -85.80000   -76.99250
+     0.00004    67.38536
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.88902    79.20000    76.75341
+     0.00004   158.89401
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.89166   -78.30000   -76.51895
+     0.00007   173.22511
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.89431    71.70000    70.40105
+     0.00007    29.86351
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.89695   -70.80000   -70.24560
+     0.00010   101.46677
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.89959    64.20000    63.65844
+     0.00010   102.74488
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.90223   -63.30000   -61.71730
+     0.00014   238.32698
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.90488    56.70000    56.69723
+     0.00014   121.05572
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.90752   -55.80000   -55.11735
+     0.00019   320.40579
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.91016    49.20000    48.27614
+     0.00019   346.63055
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.91280   -48.30000   -48.21425
+     0.00025   124.25559
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.91544    41.70000    41.09319
+     0.00024   341.58908
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.91809   -40.80000   -39.94569
+     0.00031   126.76090
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.92073    34.20000    33.64012
+     0.00031   315.16321
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.92337   -33.30001   -32.60733
+     0.00037     2.04191
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.92601    26.70001    25.88139
+     0.00037   284.87097
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.92866   -25.80001   -24.93281
+     0.00042    86.42609
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.93130    19.20001    18.63235
+     0.00042   193.45706
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.93394   -18.30000   -17.73894
+     0.00047   325.80649
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.93658    11.70000    10.86126
+     0.00047    45.42761
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.93923   -10.80000   -10.00714
+     0.00049    76.38176
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.94187     4.20000     4.14814
+     0.00049   263.71918
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.94451    -3.30001    -2.48512
+     0.00050    28.03135
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.94715    86.70000    79.07967
+     0.00003   221.12663
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.94980   -90.00000   -78.80099
+     0.00003     3.48927
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.95244    79.20000    78.52951
+     0.00004   310.49316
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.95508   -85.80000   -78.26475
+     0.00004   295.62296
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.95772    71.70000    71.69547
+     0.00006   335.34207
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.96036   -78.30000   -77.75366
+     0.00006   256.61417
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.96301    64.20000    62.89521
+     0.00009   143.83763
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.96565   -70.80000   -68.80671
+     0.00009   226.09189
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.96829    56.70000    56.21936
+     0.00013   281.51758
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.97093   -63.30000   -62.58031
+     0.00013   214.64220
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.97358    49.20000    48.05489
+     0.00018   193.18538
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.97622   -55.80000   -54.54154
+     0.00018   171.48721
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.97886    41.70000    41.05075
+     0.00023    18.99917
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.98150   -48.30000   -47.87560
+     0.00023   188.83345
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.98415    34.20000    33.76211
+     0.00029   338.71054
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.98679   -40.80000   -39.83990
+     0.00029   137.18494
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.98943    26.70001    26.16258
+     0.00035   213.38582
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.99207   -33.30001   -32.68206
+     0.00035    27.01361
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.99472    19.20001    19.05785
+     0.00040    54.08696
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     2.99736   -25.80001   -25.18242
+     0.00040   111.70560
+Freq,Input Dire,PBC Dire,Amplitude,Phase
+     3.00000    11.70000    11.44237
+     0.00044    60.67687
+                                            TIDAL_BC not defined, Default: False
+ ----------------- STATISTICS ----------------
+  TIME        DT
+  0.0000E+00  0.0000E+00
+  MassVolume  Energy      MaxEta      MinEta      Max U       Max V 
+  0.0000E+00  0.1688E+04  0.2149E+00  0.0000E+00  0.0000E+00  0.0000E+00
+  MaxTotalU   PhaseS      Froude      WetDryMass
+  0.0000E+00  0.9905E-01  0.0000E+00  0.0000E+00
+   PRINTING FILE NO.     0  TIME/TOTAL:        0.000 /    1500.000
+   PRINTING FILE NO.     1  TIME/TOTAL:        2.002 /    1500.000
+   PRINTING FILE NO.     2  TIME/TOTAL:        4.000 /    1500.000
+   PRINTING FILE NO.     3  TIME/TOTAL:        6.001 /    1500.000
+   PRINTING FILE NO.     4  TIME/TOTAL:        8.001 /    1500.000
+   PRINTING FILE NO.     5  TIME/TOTAL:       10.001 /    1500.000
+   PRINTING FILE NO.     6  TIME/TOTAL:       12.000 /    1500.000
+   PRINTING FILE NO.     7  TIME/TOTAL:       14.002 /    1500.000
+   PRINTING FILE NO.     8  TIME/TOTAL:       16.001 /    1500.000
+   PRINTING FILE NO.     9  TIME/TOTAL:       18.002 /    1500.000
+  PRINTING MEAN FILE     1
+   PRINTING FILE NO.    10  TIME/TOTAL:       20.001 /    1500.000
+   PRINTING FILE NO.    11  TIME/TOTAL:       22.002 /    1500.000
+   PRINTING FILE NO.    12  TIME/TOTAL:       24.001 /    1500.000
+   PRINTING FILE NO.    13  TIME/TOTAL:       26.001 /    1500.000
+   PRINTING FILE NO.    14  TIME/TOTAL:       28.001 /    1500.000
+  PRINTING MEAN FILE     2
+   PRINTING FILE NO.    15  TIME/TOTAL:       30.000 /    1500.000
+   PRINTING FILE NO.    16  TIME/TOTAL:       32.001 /    1500.000
+   PRINTING FILE NO.    17  TIME/TOTAL:       34.000 /    1500.000
+   PRINTING FILE NO.    18  TIME/TOTAL:       36.001 /    1500.000
+   PRINTING FILE NO.    19  TIME/TOTAL:       38.000 /    1500.000
+  PRINTING MEAN FILE     3
+   PRINTING FILE NO.    20  TIME/TOTAL:       40.001 /    1500.000
+   PRINTING FILE NO.    21  TIME/TOTAL:       42.002 /    1500.000
+   PRINTING FILE NO.    22  TIME/TOTAL:       44.001 /    1500.000
+   PRINTING FILE NO.    23  TIME/TOTAL:       46.000 /    1500.000
+   PRINTING FILE NO.    24  TIME/TOTAL:       48.001 /    1500.000
+  PRINTING MEAN FILE     4
+   PRINTING FILE NO.    25  TIME/TOTAL:       50.001 /    1500.000
+   PRINTING FILE NO.    26  TIME/TOTAL:       52.001 /    1500.000
+   PRINTING FILE NO.    27  TIME/TOTAL:       54.002 /    1500.000
+   PRINTING FILE NO.    28  TIME/TOTAL:       56.001 /    1500.000
+   PRINTING FILE NO.    29  TIME/TOTAL:       58.001 /    1500.000
+  PRINTING MEAN FILE     5
+   PRINTING FILE NO.    30  TIME/TOTAL:       60.001 /    1500.000
+   PRINTING FILE NO.    31  TIME/TOTAL:       62.001 /    1500.000
+   PRINTING FILE NO.    32  TIME/TOTAL:       64.002 /    1500.000
+   PRINTING FILE NO.    33  TIME/TOTAL:       66.003 /    1500.000
+   PRINTING FILE NO.    34  TIME/TOTAL:       68.003 /    1500.000
+  PRINTING MEAN FILE     6
+   PRINTING FILE NO.    35  TIME/TOTAL:       70.003 /    1500.000
+   PRINTING FILE NO.    36  TIME/TOTAL:       72.001 /    1500.000
+   PRINTING FILE NO.    37  TIME/TOTAL:       74.001 /    1500.000
+   PRINTING FILE NO.    38  TIME/TOTAL:       76.001 /    1500.000
+   PRINTING FILE NO.    39  TIME/TOTAL:       78.001 /    1500.000
+  PRINTING MEAN FILE     7
+   PRINTING FILE NO.    40  TIME/TOTAL:       80.001 /    1500.000
+   PRINTING FILE NO.    41  TIME/TOTAL:       82.001 /    1500.000
+   PRINTING FILE NO.    42  TIME/TOTAL:       84.001 /    1500.000
+   PRINTING FILE NO.    43  TIME/TOTAL:       86.002 /    1500.000
+   PRINTING FILE NO.    44  TIME/TOTAL:       88.003 /    1500.000
+  PRINTING MEAN FILE     8
+   PRINTING FILE NO.    45  TIME/TOTAL:       90.002 /    1500.000
+   PRINTING FILE NO.    46  TIME/TOTAL:       92.003 /    1500.000
+   PRINTING FILE NO.    47  TIME/TOTAL:       94.001 /    1500.000
+   PRINTING FILE NO.    48  TIME/TOTAL:       96.002 /    1500.000
+   PRINTING FILE NO.    49  TIME/TOTAL:       98.001 /    1500.000
+  PRINTING MEAN FILE     9
+ ----------------- STATISTICS ----------------
+  TIME        DT
+  0.1000E+03  0.2642E-02
+  MassVolume  Energy      MaxEta      MinEta      Max U       Max V 
+ -0.1777E+01  0.1665E+04  0.2237E+00 -0.2807E+00  0.1043E+01  0.6752E+00
+  MaxTotalU   PhaseS      Froude      WetDryMass
+  0.1081E+01  0.1081E+01  0.1000E+01 -0.1552E+00
+   PRINTING FILE NO.    50  TIME/TOTAL:      100.002 /    1500.000
+   PRINTING FILE NO.    51  TIME/TOTAL:      102.001 /    1500.000
+   PRINTING FILE NO.    52  TIME/TOTAL:      104.002 /    1500.000
+   PRINTING FILE NO.    53  TIME/TOTAL:      106.003 /    1500.000
+   PRINTING FILE NO.    54  TIME/TOTAL:      108.002 /    1500.000
+  PRINTING MEAN FILE    10
+   PRINTING FILE NO.    55  TIME/TOTAL:      110.002 /    1500.000
+   PRINTING FILE NO.    56  TIME/TOTAL:      112.001 /    1500.000
+   PRINTING FILE NO.    57  TIME/TOTAL:      114.001 /    1500.000
+   PRINTING FILE NO.    58  TIME/TOTAL:      116.003 /    1500.000
+   PRINTING FILE NO.    59  TIME/TOTAL:      118.002 /    1500.000
+  PRINTING MEAN FILE    11
+   PRINTING FILE NO.    60  TIME/TOTAL:      120.003 /    1500.000
+   PRINTING FILE NO.    61  TIME/TOTAL:      122.001 /    1500.000
+   PRINTING FILE NO.    62  TIME/TOTAL:      124.003 /    1500.000
+   PRINTING FILE NO.    63  TIME/TOTAL:      126.002 /    1500.000
+   PRINTING FILE NO.    64  TIME/TOTAL:      128.002 /    1500.000
+  PRINTING MEAN FILE    12
+   PRINTING FILE NO.    65  TIME/TOTAL:      130.002 /    1500.000
+   PRINTING FILE NO.    66  TIME/TOTAL:      132.003 /    1500.000
+   PRINTING FILE NO.    67  TIME/TOTAL:      134.001 /    1500.000
+   PRINTING FILE NO.    68  TIME/TOTAL:      136.003 /    1500.000
+   PRINTING FILE NO.    69  TIME/TOTAL:      138.002 /    1500.000
+  PRINTING MEAN FILE    13
+   PRINTING FILE NO.    70  TIME/TOTAL:      140.002 /    1500.000
+   PRINTING FILE NO.    71  TIME/TOTAL:      142.004 /    1500.000
+   PRINTING FILE NO.    72  TIME/TOTAL:      144.002 /    1500.000
+   PRINTING FILE NO.    73  TIME/TOTAL:      146.003 /    1500.000
+   PRINTING FILE NO.    74  TIME/TOTAL:      148.001 /    1500.000
+  PRINTING MEAN FILE    14
+   PRINTING FILE NO.    75  TIME/TOTAL:      150.002 /    1500.000
+   PRINTING FILE NO.    76  TIME/TOTAL:      152.003 /    1500.000
+   PRINTING FILE NO.    77  TIME/TOTAL:      154.003 /    1500.000
+   PRINTING FILE NO.    78  TIME/TOTAL:      156.004 /    1500.000
+   PRINTING FILE NO.    79  TIME/TOTAL:      158.003 /    1500.000
+  PRINTING MEAN FILE    15
+   PRINTING FILE NO.    80  TIME/TOTAL:      160.004 /    1500.000
+   PRINTING FILE NO.    81  TIME/TOTAL:      162.002 /    1500.000
+   PRINTING FILE NO.    82  TIME/TOTAL:      164.003 /    1500.000
+   PRINTING FILE NO.    83  TIME/TOTAL:      166.005 /    1500.000
+   PRINTING FILE NO.    84  TIME/TOTAL:      168.005 /    1500.000
+  PRINTING MEAN FILE    16
+   PRINTING FILE NO.    85  TIME/TOTAL:      170.004 /    1500.000
+   PRINTING FILE NO.    86  TIME/TOTAL:      172.004 /    1500.000
+   PRINTING FILE NO.    87  TIME/TOTAL:      174.004 /    1500.000
+   PRINTING FILE NO.    88  TIME/TOTAL:      176.005 /    1500.000
+   PRINTING FILE NO.    89  TIME/TOTAL:      178.005 /    1500.000
+  PRINTING MEAN FILE    17
+   PRINTING FILE NO.    90  TIME/TOTAL:      180.004 /    1500.000
+   PRINTING FILE NO.    91  TIME/TOTAL:      182.004 /    1500.000
+   PRINTING FILE NO.    92  TIME/TOTAL:      184.005 /    1500.000
+   PRINTING FILE NO.    93  TIME/TOTAL:      186.006 /    1500.000
+   PRINTING FILE NO.    94  TIME/TOTAL:      188.006 /    1500.000
+  PRINTING MEAN FILE    18
+   PRINTING FILE NO.    95  TIME/TOTAL:      190.006 /    1500.000
+   PRINTING FILE NO.    96  TIME/TOTAL:      192.007 /    1500.000
+   PRINTING FILE NO.    97  TIME/TOTAL:      194.006 /    1500.000
+   PRINTING FILE NO.    98  TIME/TOTAL:      196.005 /    1500.000
+   PRINTING FILE NO.    99  TIME/TOTAL:      198.006 /    1500.000
+  PRINTING MEAN FILE    19
+   PRINTING FILE NO.   100  TIME/TOTAL:      200.005 /    1500.000
+ ----------------- STATISTICS ----------------
+  TIME        DT
+  0.2000E+03  0.2544E-02
+  MassVolume  Energy      MaxEta      MinEta      Max U       Max V 
+  0.6660E+00  0.1684E+04  0.2460E+00 -0.2849E+00  0.7707E+00  0.5459E+00
+  MaxTotalU   PhaseS      Froude      WetDryMass
+  0.7855E+00  0.1695E+01  0.4634E+00 -0.1912E+00
+   PRINTING FILE NO.   101  TIME/TOTAL:      202.006 /    1500.000
+   PRINTING FILE NO.   102  TIME/TOTAL:      204.005 /    1500.000
+   PRINTING FILE NO.   103  TIME/TOTAL:      206.007 /    1500.000
+   PRINTING FILE NO.   104  TIME/TOTAL:      208.006 /    1500.000
+  PRINTING MEAN FILE    20
+   PRINTING FILE NO.   105  TIME/TOTAL:      210.005 /    1500.000
+   PRINTING FILE NO.   106  TIME/TOTAL:      212.006 /    1500.000
+   PRINTING FILE NO.   107  TIME/TOTAL:      214.004 /    1500.000
+   PRINTING FILE NO.   108  TIME/TOTAL:      216.005 /    1500.000
+   PRINTING FILE NO.   109  TIME/TOTAL:      218.006 /    1500.000
+  PRINTING MEAN FILE    21
+   PRINTING FILE NO.   110  TIME/TOTAL:      220.006 /    1500.000
+   PRINTING FILE NO.   111  TIME/TOTAL:      222.005 /    1500.000
+   PRINTING FILE NO.   112  TIME/TOTAL:      224.008 /    1500.000
+   PRINTING FILE NO.   113  TIME/TOTAL:      226.006 /    1500.000
+   PRINTING FILE NO.   114  TIME/TOTAL:      228.007 /    1500.000
+  PRINTING MEAN FILE    22
+   PRINTING FILE NO.   115  TIME/TOTAL:      230.008 /    1500.000
+   PRINTING FILE NO.   116  TIME/TOTAL:      232.006 /    1500.000
+   PRINTING FILE NO.   117  TIME/TOTAL:      234.008 /    1500.000
+   PRINTING FILE NO.   118  TIME/TOTAL:      236.008 /    1500.000
+   PRINTING FILE NO.   119  TIME/TOTAL:      238.007 /    1500.000
+  PRINTING MEAN FILE    23
+   PRINTING FILE NO.   120  TIME/TOTAL:      240.007 /    1500.000
+   PRINTING FILE NO.   121  TIME/TOTAL:      242.008 /    1500.000
+   PRINTING FILE NO.   122  TIME/TOTAL:      244.007 /    1500.000
+   PRINTING FILE NO.   123  TIME/TOTAL:      246.007 /    1500.000
+   PRINTING FILE NO.   124  TIME/TOTAL:      248.007 /    1500.000
+  PRINTING MEAN FILE    24
+   PRINTING FILE NO.   125  TIME/TOTAL:      250.007 /    1500.000
+   PRINTING FILE NO.   126  TIME/TOTAL:      252.006 /    1500.000
+   PRINTING FILE NO.   127  TIME/TOTAL:      254.008 /    1500.000
+   PRINTING FILE NO.   128  TIME/TOTAL:      256.007 /    1500.000
+   PRINTING FILE NO.   129  TIME/TOTAL:      258.009 /    1500.000
+  PRINTING MEAN FILE    25
+   PRINTING FILE NO.   130  TIME/TOTAL:      260.007 /    1500.000
+   PRINTING FILE NO.   131  TIME/TOTAL:      262.008 /    1500.000
+   PRINTING FILE NO.   132  TIME/TOTAL:      264.008 /    1500.000
+   PRINTING FILE NO.   133  TIME/TOTAL:      266.008 /    1500.000
+   PRINTING FILE NO.   134  TIME/TOTAL:      268.009 /    1500.000
+  PRINTING MEAN FILE    26
+   PRINTING FILE NO.   135  TIME/TOTAL:      270.008 /    1500.000
+   PRINTING FILE NO.   136  TIME/TOTAL:      272.009 /    1500.000
+   PRINTING FILE NO.   137  TIME/TOTAL:      274.009 /    1500.000
+   PRINTING FILE NO.   138  TIME/TOTAL:      276.011 /    1500.000
+   PRINTING FILE NO.   139  TIME/TOTAL:      278.011 /    1500.000
+  PRINTING MEAN FILE    27
+   PRINTING FILE NO.   140  TIME/TOTAL:      280.011 /    1500.000
+   PRINTING FILE NO.   141  TIME/TOTAL:      282.010 /    1500.000
+   PRINTING FILE NO.   142  TIME/TOTAL:      284.014 /    1500.000
+   PRINTING FILE NO.   143  TIME/TOTAL:      286.014 /    1500.000
+   PRINTING FILE NO.   144  TIME/TOTAL:      288.013 /    1500.000
+  PRINTING MEAN FILE    28
+   PRINTING FILE NO.   145  TIME/TOTAL:      290.014 /    1500.000
+   PRINTING FILE NO.   146  TIME/TOTAL:      292.014 /    1500.000
+   PRINTING FILE NO.   147  TIME/TOTAL:      294.013 /    1500.000
+   PRINTING FILE NO.   148  TIME/TOTAL:      296.015 /    1500.000
+   PRINTING FILE NO.   149  TIME/TOTAL:      298.014 /    1500.000
+  PRINTING MEAN FILE    29
+ ----------------- STATISTICS ----------------
+  TIME        DT
+  0.3000E+03  0.2683E-02
+  MassVolume  Energy      MaxEta      MinEta      Max U       Max V 
+  0.4815E+00  0.1684E+04  0.2149E+00 -0.1671E+00  0.1058E+01  0.7686E+00
+  MaxTotalU   PhaseS      Froude      WetDryMass
+  0.1062E+01  0.1062E+01  0.1000E+01 -0.2149E+00
+   PRINTING FILE NO.   150  TIME/TOTAL:      300.017 /    1500.000
+   PRINTING FILE NO.   151  TIME/TOTAL:      302.015 /    1500.000
+   PRINTING FILE NO.   152  TIME/TOTAL:      304.017 /    1500.000
+   PRINTING FILE NO.   153  TIME/TOTAL:      306.015 /    1500.000
+   PRINTING FILE NO.   154  TIME/TOTAL:      308.014 /    1500.000
+  PRINTING MEAN FILE    30
+   PRINTING FILE NO.   155  TIME/TOTAL:      310.014 /    1500.000
+   PRINTING FILE NO.   156  TIME/TOTAL:      312.013 /    1500.000
+   PRINTING FILE NO.   157  TIME/TOTAL:      314.014 /    1500.000
+   PRINTING FILE NO.   158  TIME/TOTAL:      316.014 /    1500.000
+   PRINTING FILE NO.   159  TIME/TOTAL:      318.013 /    1500.000
+  PRINTING MEAN FILE    31
+   PRINTING FILE NO.   160  TIME/TOTAL:      320.013 /    1500.000
+   PRINTING FILE NO.   161  TIME/TOTAL:      322.012 /    1500.000
+   PRINTING FILE NO.   162  TIME/TOTAL:      324.013 /    1500.000
+   PRINTING FILE NO.   163  TIME/TOTAL:      326.014 /    1500.000
+   PRINTING FILE NO.   164  TIME/TOTAL:      328.015 /    1500.000
+  PRINTING MEAN FILE    32
+   PRINTING FILE NO.   165  TIME/TOTAL:      330.015 /    1500.000
+   PRINTING FILE NO.   166  TIME/TOTAL:      332.014 /    1500.000
+   PRINTING FILE NO.   167  TIME/TOTAL:      334.013 /    1500.000
+   PRINTING FILE NO.   168  TIME/TOTAL:      336.013 /    1500.000
+   PRINTING FILE NO.   169  TIME/TOTAL:      338.015 /    1500.000
+  PRINTING MEAN FILE    33
+   PRINTING FILE NO.   170  TIME/TOTAL:      340.016 /    1500.000
+   PRINTING FILE NO.   171  TIME/TOTAL:      342.016 /    1500.000
+   PRINTING FILE NO.   172  TIME/TOTAL:      344.016 /    1500.000
+   PRINTING FILE NO.   173  TIME/TOTAL:      346.014 /    1500.000
+   PRINTING FILE NO.   174  TIME/TOTAL:      348.014 /    1500.000
+  PRINTING MEAN FILE    34
+   PRINTING FILE NO.   175  TIME/TOTAL:      350.014 /    1500.000
+   PRINTING FILE NO.   176  TIME/TOTAL:      352.011 /    1500.000
+   PRINTING FILE NO.   177  TIME/TOTAL:      354.010 /    1500.000
+   PRINTING FILE NO.   178  TIME/TOTAL:      356.011 /    1500.000
+   PRINTING FILE NO.   179  TIME/TOTAL:      358.012 /    1500.000
+  PRINTING MEAN FILE    35
+   PRINTING FILE NO.   180  TIME/TOTAL:      360.012 /    1500.000
+   PRINTING FILE NO.   181  TIME/TOTAL:      362.012 /    1500.000
+   PRINTING FILE NO.   182  TIME/TOTAL:      364.012 /    1500.000
+   PRINTING FILE NO.   183  TIME/TOTAL:      366.011 /    1500.000
+   PRINTING FILE NO.   184  TIME/TOTAL:      368.011 /    1500.000
+  PRINTING MEAN FILE    36
+   PRINTING FILE NO.   185  TIME/TOTAL:      370.011 /    1500.000
+   PRINTING FILE NO.   186  TIME/TOTAL:      372.010 /    1500.000
+   PRINTING FILE NO.   187  TIME/TOTAL:      374.009 /    1500.000
+   PRINTING FILE NO.   188  TIME/TOTAL:      376.010 /    1500.000
+   PRINTING FILE NO.   189  TIME/TOTAL:      378.008 /    1500.000
+  PRINTING MEAN FILE    37
+   PRINTING FILE NO.   190  TIME/TOTAL:      380.009 /    1500.000
+   PRINTING FILE NO.   191  TIME/TOTAL:      382.009 /    1500.000
+   PRINTING FILE NO.   192  TIME/TOTAL:      384.007 /    1500.000
+   PRINTING FILE NO.   193  TIME/TOTAL:      386.007 /    1500.000
+   PRINTING FILE NO.   194  TIME/TOTAL:      388.010 /    1500.000
+  PRINTING MEAN FILE    38
+   PRINTING FILE NO.   195  TIME/TOTAL:      390.008 /    1500.000
+   PRINTING FILE NO.   196  TIME/TOTAL:      392.009 /    1500.000
+   PRINTING FILE NO.   197  TIME/TOTAL:      394.007 /    1500.000
+   PRINTING FILE NO.   198  TIME/TOTAL:      396.009 /    1500.000
+   PRINTING FILE NO.   199  TIME/TOTAL:      398.010 /    1500.000
+  PRINTING MEAN FILE    39
+   PRINTING FILE NO.   200  TIME/TOTAL:      400.007 /    1500.000
+ ----------------- STATISTICS ----------------
+  TIME        DT
+  0.4000E+03  0.2625E-02
+  MassVolume  Energy      MaxEta      MinEta      Max U       Max V 
+ -0.7393E+00  0.1670E+04  0.2371E+00 -0.2230E+00  0.8462E+00  0.6992E+00
+  MaxTotalU   PhaseS      Froude      WetDryMass
+  0.1012E+01  0.1242E+01  0.8146E+00 -0.1367E+00
+   PRINTING FILE NO.   201  TIME/TOTAL:      402.009 /    1500.000
+   PRINTING FILE NO.   202  TIME/TOTAL:      404.009 /    1500.000
+   PRINTING FILE NO.   203  TIME/TOTAL:      406.008 /    1500.000
+   PRINTING FILE NO.   204  TIME/TOTAL:      408.011 /    1500.000
+  PRINTING MEAN FILE    40
+   PRINTING FILE NO.   205  TIME/TOTAL:      410.011 /    1500.000
+   PRINTING FILE NO.   206  TIME/TOTAL:      412.012 /    1500.000
+   PRINTING FILE NO.   207  TIME/TOTAL:      414.012 /    1500.000
+   PRINTING FILE NO.   208  TIME/TOTAL:      416.014 /    1500.000
+   PRINTING FILE NO.   209  TIME/TOTAL:      418.014 /    1500.000
+  PRINTING MEAN FILE    41
+   PRINTING FILE NO.   210  TIME/TOTAL:      420.014 /    1500.000
+   PRINTING FILE NO.   211  TIME/TOTAL:      422.014 /    1500.000
+   PRINTING FILE NO.   212  TIME/TOTAL:      424.015 /    1500.000
+   PRINTING FILE NO.   213  TIME/TOTAL:      426.016 /    1500.000
+   PRINTING FILE NO.   214  TIME/TOTAL:      428.015 /    1500.000
+  PRINTING MEAN FILE    42
+   PRINTING FILE NO.   215  TIME/TOTAL:      430.015 /    1500.000
+   PRINTING FILE NO.   216  TIME/TOTAL:      432.015 /    1500.000
+   PRINTING FILE NO.   217  TIME/TOTAL:      434.016 /    1500.000
+   PRINTING FILE NO.   218  TIME/TOTAL:      436.014 /    1500.000
+   PRINTING FILE NO.   219  TIME/TOTAL:      438.014 /    1500.000
+  PRINTING MEAN FILE    43
+   PRINTING FILE NO.   220  TIME/TOTAL:      440.016 /    1500.000
+   PRINTING FILE NO.   221  TIME/TOTAL:      442.014 /    1500.000
+   PRINTING FILE NO.   222  TIME/TOTAL:      444.013 /    1500.000
+   PRINTING FILE NO.   223  TIME/TOTAL:      446.015 /    1500.000
+   PRINTING FILE NO.   224  TIME/TOTAL:      448.015 /    1500.000
+  PRINTING MEAN FILE    44
+   PRINTING FILE NO.   225  TIME/TOTAL:      450.016 /    1500.000
+   PRINTING FILE NO.   226  TIME/TOTAL:      452.017 /    1500.000
+   PRINTING FILE NO.   227  TIME/TOTAL:      454.017 /    1500.000
+   PRINTING FILE NO.   228  TIME/TOTAL:      456.018 /    1500.000
+   PRINTING FILE NO.   229  TIME/TOTAL:      458.017 /    1500.000
+  PRINTING MEAN FILE    45
+   PRINTING FILE NO.   230  TIME/TOTAL:      460.018 /    1500.000
+   PRINTING FILE NO.   231  TIME/TOTAL:      462.016 /    1500.000
+   PRINTING FILE NO.   232  TIME/TOTAL:      464.016 /    1500.000
+   PRINTING FILE NO.   233  TIME/TOTAL:      466.016 /    1500.000
+   PRINTING FILE NO.   234  TIME/TOTAL:      468.013 /    1500.000
+  PRINTING MEAN FILE    46
+   PRINTING FILE NO.   235  TIME/TOTAL:      470.015 /    1500.000
+   PRINTING FILE NO.   236  TIME/TOTAL:      472.014 /    1500.000
+   PRINTING FILE NO.   237  TIME/TOTAL:      474.013 /    1500.000
+   PRINTING FILE NO.   238  TIME/TOTAL:      476.013 /    1500.000
+   PRINTING FILE NO.   239  TIME/TOTAL:      478.014 /    1500.000
+  PRINTING MEAN FILE    47
+   PRINTING FILE NO.   240  TIME/TOTAL:      480.014 /    1500.000
+   PRINTING FILE NO.   241  TIME/TOTAL:      482.016 /    1500.000
+   PRINTING FILE NO.   242  TIME/TOTAL:      484.016 /    1500.000
+   PRINTING FILE NO.   243  TIME/TOTAL:      486.015 /    1500.000
+   PRINTING FILE NO.   244  TIME/TOTAL:      488.016 /    1500.000
+  PRINTING MEAN FILE    48
+   PRINTING FILE NO.   245  TIME/TOTAL:      490.016 /    1500.000
+   PRINTING FILE NO.   246  TIME/TOTAL:      492.016 /    1500.000
+   PRINTING FILE NO.   247  TIME/TOTAL:      494.015 /    1500.000
+   PRINTING FILE NO.   248  TIME/TOTAL:      496.015 /    1500.000
+   PRINTING FILE NO.   249  TIME/TOTAL:      498.014 /    1500.000
+  PRINTING MEAN FILE    49
+ ----------------- STATISTICS ----------------
+  TIME        DT
+  0.5000E+03  0.2692E-02
+  MassVolume  Energy      MaxEta      MinEta      Max U       Max V 
+  0.1796E+01  0.1693E+04  0.2251E+00 -0.2552E+00  0.1262E+01  0.7476E+00
+  MaxTotalU   PhaseS      Froude      WetDryMass
+  0.1292E+01  0.1996E+01  0.6471E+00 -0.1414E+00
+   PRINTING FILE NO.   250  TIME/TOTAL:      500.013 /    1500.000
+   PRINTING FILE NO.   251  TIME/TOTAL:      502.013 /    1500.000
+   PRINTING FILE NO.   252  TIME/TOTAL:      504.015 /    1500.000
+   PRINTING FILE NO.   253  TIME/TOTAL:      506.017 /    1500.000
+   PRINTING FILE NO.   254  TIME/TOTAL:      508.015 /    1500.000
+  PRINTING MEAN FILE    50
+   PRINTING FILE NO.   255  TIME/TOTAL:      510.014 /    1500.000
+   PRINTING FILE NO.   256  TIME/TOTAL:      512.013 /    1500.000
+   PRINTING FILE NO.   257  TIME/TOTAL:      514.015 /    1500.000
+   PRINTING FILE NO.   258  TIME/TOTAL:      516.022 /    1500.000
+   PRINTING FILE NO.   259  TIME/TOTAL:      518.023 /    1500.000
+  PRINTING MEAN FILE    51
+   PRINTING FILE NO.   260  TIME/TOTAL:      520.025 /    1500.000
+   PRINTING FILE NO.   261  TIME/TOTAL:      522.020 /    1500.000
+   PRINTING FILE NO.   262  TIME/TOTAL:      524.026 /    1500.000
+   PRINTING FILE NO.   263  TIME/TOTAL:      526.022 /    1500.000
+   PRINTING FILE NO.   264  TIME/TOTAL:      528.022 /    1500.000
+  PRINTING MEAN FILE    52
+   PRINTING FILE NO.   265  TIME/TOTAL:      530.019 /    1500.000
+   PRINTING FILE NO.   266  TIME/TOTAL:      532.024 /    1500.000
+   PRINTING FILE NO.   267  TIME/TOTAL:      534.024 /    1500.000
+   PRINTING FILE NO.   268  TIME/TOTAL:      536.027 /    1500.000
+   PRINTING FILE NO.   269  TIME/TOTAL:      538.024 /    1500.000
+  PRINTING MEAN FILE    53
+   PRINTING FILE NO.   270  TIME/TOTAL:      540.019 /    1500.000
+   PRINTING FILE NO.   271  TIME/TOTAL:      542.023 /    1500.000
+   PRINTING FILE NO.   272  TIME/TOTAL:      544.022 /    1500.000
+   PRINTING FILE NO.   273  TIME/TOTAL:      546.019 /    1500.000
+   PRINTING FILE NO.   274  TIME/TOTAL:      548.016 /    1500.000
+  PRINTING MEAN FILE    54
+   PRINTING FILE NO.   275  TIME/TOTAL:      550.013 /    1500.000
+   PRINTING FILE NO.   276  TIME/TOTAL:      552.015 /    1500.000
+   PRINTING FILE NO.   277  TIME/TOTAL:      554.012 /    1500.000
+   PRINTING FILE NO.   278  TIME/TOTAL:      556.010 /    1500.000
+   PRINTING FILE NO.   279  TIME/TOTAL:      558.006 /    1500.000
+  PRINTING MEAN FILE    55
+   PRINTING FILE NO.   280  TIME/TOTAL:      560.009 /    1500.000
+   PRINTING FILE NO.   281  TIME/TOTAL:      562.004 /    1500.000
+   PRINTING FILE NO.   282  TIME/TOTAL:      564.006 /    1500.000
+   PRINTING FILE NO.   283  TIME/TOTAL:      566.005 /    1500.000
+   PRINTING FILE NO.   284  TIME/TOTAL:      568.009 /    1500.000
+  PRINTING MEAN FILE    56
+   PRINTING FILE NO.   285  TIME/TOTAL:      570.012 /    1500.000
+   PRINTING FILE NO.   286  TIME/TOTAL:      572.013 /    1500.000
+   PRINTING FILE NO.   287  TIME/TOTAL:      574.010 /    1500.000
+   PRINTING FILE NO.   288  TIME/TOTAL:      576.009 /    1500.000
+   PRINTING FILE NO.   289  TIME/TOTAL:      578.016 /    1500.000
+  PRINTING MEAN FILE    57
+   PRINTING FILE NO.   290  TIME/TOTAL:      580.015 /    1500.000
+   PRINTING FILE NO.   291  TIME/TOTAL:      582.013 /    1500.000
+   PRINTING FILE NO.   292  TIME/TOTAL:      584.014 /    1500.000
+   PRINTING FILE NO.   293  TIME/TOTAL:      586.014 /    1500.000
+   PRINTING FILE NO.   294  TIME/TOTAL:      588.009 /    1500.000
+  PRINTING MEAN FILE    58
+   PRINTING FILE NO.   295  TIME/TOTAL:      590.011 /    1500.000
+   PRINTING FILE NO.   296  TIME/TOTAL:      592.012 /    1500.000
+   PRINTING FILE NO.   297  TIME/TOTAL:      594.008 /    1500.000
+   PRINTING FILE NO.   298  TIME/TOTAL:      596.008 /    1500.000
+   PRINTING FILE NO.   299  TIME/TOTAL:      598.008 /    1500.000
+  PRINTING MEAN FILE    59
+ ----------------- STATISTICS ----------------
+  TIME        DT
+  0.6000E+03  0.2658E-02
+  MassVolume  Energy      MaxEta      MinEta      Max U       Max V 
+  0.1984E+01  0.1702E+04  0.2149E+00 -0.1685E+00  0.8615E+00  0.6788E+00
+  MaxTotalU   PhaseS      Froude      WetDryMass
+  0.8923E+00  0.1039E+01  0.8589E+00 -0.8157E-01
+   PRINTING FILE NO.   300  TIME/TOTAL:      600.006 /    1500.000
+   PRINTING FILE NO.   301  TIME/TOTAL:      602.009 /    1500.000
+   PRINTING FILE NO.   302  TIME/TOTAL:      604.004 /    1500.000
+   PRINTING FILE NO.   303  TIME/TOTAL:      606.006 /    1500.000
+   PRINTING FILE NO.   304  TIME/TOTAL:      608.008 /    1500.000
+  PRINTING MEAN FILE    60
+   PRINTING FILE NO.   305  TIME/TOTAL:      610.008 /    1500.000
+   PRINTING FILE NO.   306  TIME/TOTAL:      612.014 /    1500.000
+   PRINTING FILE NO.   307  TIME/TOTAL:      614.013 /    1500.000
+   PRINTING FILE NO.   308  TIME/TOTAL:      616.018 /    1500.000
+   PRINTING FILE NO.   309  TIME/TOTAL:      618.017 /    1500.000
+  PRINTING MEAN FILE    61
+   PRINTING FILE NO.   310  TIME/TOTAL:      620.015 /    1500.000
+   PRINTING FILE NO.   311  TIME/TOTAL:      622.018 /    1500.000
+   PRINTING FILE NO.   312  TIME/TOTAL:      624.016 /    1500.000
+   PRINTING FILE NO.   313  TIME/TOTAL:      626.018 /    1500.000
+   PRINTING FILE NO.   314  TIME/TOTAL:      628.023 /    1500.000
+  PRINTING MEAN FILE    62
+   PRINTING FILE NO.   315  TIME/TOTAL:      630.018 /    1500.000
+   PRINTING FILE NO.   316  TIME/TOTAL:      632.020 /    1500.000
+   PRINTING FILE NO.   317  TIME/TOTAL:      634.021 /    1500.000
+   PRINTING FILE NO.   318  TIME/TOTAL:      636.016 /    1500.000
+   PRINTING FILE NO.   319  TIME/TOTAL:      638.019 /    1500.000
+  PRINTING MEAN FILE    63
+   PRINTING FILE NO.   320  TIME/TOTAL:      640.019 /    1500.000
+   PRINTING FILE NO.   321  TIME/TOTAL:      642.022 /    1500.000
+   PRINTING FILE NO.   322  TIME/TOTAL:      644.023 /    1500.000
+   PRINTING FILE NO.   323  TIME/TOTAL:      646.029 /    1500.000
+   PRINTING FILE NO.   324  TIME/TOTAL:      648.025 /    1500.000
+  PRINTING MEAN FILE    64
+   PRINTING FILE NO.   325  TIME/TOTAL:      650.032 /    1500.000
+   PRINTING FILE NO.   326  TIME/TOTAL:      652.033 /    1500.000
+   PRINTING FILE NO.   327  TIME/TOTAL:      654.035 /    1500.000
+   PRINTING FILE NO.   328  TIME/TOTAL:      656.043 /    1500.000
+   PRINTING FILE NO.   329  TIME/TOTAL:      658.045 /    1500.000
+  PRINTING MEAN FILE    65
+   PRINTING FILE NO.   330  TIME/TOTAL:      660.044 /    1500.000
+   PRINTING FILE NO.   331  TIME/TOTAL:      662.044 /    1500.000
+   PRINTING FILE NO.   332  TIME/TOTAL:      664.045 /    1500.000
+   PRINTING FILE NO.   333  TIME/TOTAL:      666.044 /    1500.000
+   PRINTING FILE NO.   334  TIME/TOTAL:      668.044 /    1500.000
+  PRINTING MEAN FILE    66
+   PRINTING FILE NO.   335  TIME/TOTAL:      670.044 /    1500.000
+   PRINTING FILE NO.   336  TIME/TOTAL:      672.046 /    1500.000
+   PRINTING FILE NO.   337  TIME/TOTAL:      674.044 /    1500.000
+   PRINTING FILE NO.   338  TIME/TOTAL:      676.048 /    1500.000
+   PRINTING FILE NO.   339  TIME/TOTAL:      678.046 /    1500.000
+  PRINTING MEAN FILE    67
+   PRINTING FILE NO.   340  TIME/TOTAL:      680.053 /    1500.000
+   PRINTING FILE NO.   341  TIME/TOTAL:      682.048 /    1500.000
+   PRINTING FILE NO.   342  TIME/TOTAL:      684.048 /    1500.000
+   PRINTING FILE NO.   343  TIME/TOTAL:      686.052 /    1500.000
+   PRINTING FILE NO.   344  TIME/TOTAL:      688.046 /    1500.000
+  PRINTING MEAN FILE    68
+   PRINTING FILE NO.   345  TIME/TOTAL:      690.049 /    1500.000
+   PRINTING FILE NO.   346  TIME/TOTAL:      692.050 /    1500.000
+   PRINTING FILE NO.   347  TIME/TOTAL:      694.049 /    1500.000
+   PRINTING FILE NO.   348  TIME/TOTAL:      696.054 /    1500.000
+   PRINTING FILE NO.   349  TIME/TOTAL:      698.050 /    1500.000
+  PRINTING MEAN FILE    69
+ ----------------- STATISTICS ----------------
+  TIME        DT
+  0.7000E+03  0.2626E-02
+  MassVolume  Energy      MaxEta      MinEta      Max U       Max V 
+ -0.1137E+01  0.1670E+04  0.2206E+00 -0.1744E+00  0.1085E+01  0.7653E+00
+  MaxTotalU   PhaseS      Froude      WetDryMass
+  0.1093E+01  0.1831E+01  0.5972E+00 -0.1084E+00
+   PRINTING FILE NO.   350  TIME/TOTAL:      700.050 /    1500.000
+   PRINTING FILE NO.   351  TIME/TOTAL:      702.054 /    1500.000
+   PRINTING FILE NO.   352  TIME/TOTAL:      704.052 /    1500.000
+   PRINTING FILE NO.   353  TIME/TOTAL:      706.050 /    1500.000
+   PRINTING FILE NO.   354  TIME/TOTAL:      708.051 /    1500.000
+  PRINTING MEAN FILE    70
+   PRINTING FILE NO.   355  TIME/TOTAL:      710.054 /    1500.000
+   PRINTING FILE NO.   356  TIME/TOTAL:      712.050 /    1500.000
+   PRINTING FILE NO.   357  TIME/TOTAL:      714.050 /    1500.000
+   PRINTING FILE NO.   358  TIME/TOTAL:      716.050 /    1500.000
+   PRINTING FILE NO.   359  TIME/TOTAL:      718.052 /    1500.000
+  PRINTING MEAN FILE    71
+   PRINTING FILE NO.   360  TIME/TOTAL:      720.053 /    1500.000
+   PRINTING FILE NO.   361  TIME/TOTAL:      722.057 /    1500.000
+   PRINTING FILE NO.   362  TIME/TOTAL:      724.054 /    1500.000
+   PRINTING FILE NO.   363  TIME/TOTAL:      726.052 /    1500.000
+   PRINTING FILE NO.   364  TIME/TOTAL:      728.054 /    1500.000
+  PRINTING MEAN FILE    72
+   PRINTING FILE NO.   365  TIME/TOTAL:      730.052 /    1500.000
+   PRINTING FILE NO.   366  TIME/TOTAL:      732.054 /    1500.000
+   PRINTING FILE NO.   367  TIME/TOTAL:      734.055 /    1500.000
+   PRINTING FILE NO.   368  TIME/TOTAL:      736.049 /    1500.000
+   PRINTING FILE NO.   369  TIME/TOTAL:      738.050 /    1500.000
+  PRINTING MEAN FILE    73
+   PRINTING FILE NO.   370  TIME/TOTAL:      740.048 /    1500.000
+   PRINTING FILE NO.   371  TIME/TOTAL:      742.051 /    1500.000
+   PRINTING FILE NO.   372  TIME/TOTAL:      744.056 /    1500.000
+   PRINTING FILE NO.   373  TIME/TOTAL:      746.055 /    1500.000
+   PRINTING FILE NO.   374  TIME/TOTAL:      748.054 /    1500.000
+  PRINTING MEAN FILE    74
+   PRINTING FILE NO.   375  TIME/TOTAL:      750.055 /    1500.000
+   PRINTING FILE NO.   376  TIME/TOTAL:      752.053 /    1500.000
+   PRINTING FILE NO.   377  TIME/TOTAL:      754.059 /    1500.000
+   PRINTING FILE NO.   378  TIME/TOTAL:      756.058 /    1500.000
+   PRINTING FILE NO.   379  TIME/TOTAL:      758.056 /    1500.000
+  PRINTING MEAN FILE    75
+   PRINTING FILE NO.   380  TIME/TOTAL:      760.058 /    1500.000
+   PRINTING FILE NO.   381  TIME/TOTAL:      762.058 /    1500.000
+   PRINTING FILE NO.   382  TIME/TOTAL:      764.059 /    1500.000
+   PRINTING FILE NO.   383  TIME/TOTAL:      766.055 /    1500.000
+   PRINTING FILE NO.   384  TIME/TOTAL:      768.058 /    1500.000
+  PRINTING MEAN FILE    76
+   PRINTING FILE NO.   385  TIME/TOTAL:      770.058 /    1500.000
+   PRINTING FILE NO.   386  TIME/TOTAL:      772.059 /    1500.000
+   PRINTING FILE NO.   387  TIME/TOTAL:      774.057 /    1500.000
+   PRINTING FILE NO.   388  TIME/TOTAL:      776.059 /    1500.000
+   PRINTING FILE NO.   389  TIME/TOTAL:      778.061 /    1500.000
+  PRINTING MEAN FILE    77
+   PRINTING FILE NO.   390  TIME/TOTAL:      780.070 /    1500.000
+   PRINTING FILE NO.   391  TIME/TOTAL:      782.069 /    1500.000
+   PRINTING FILE NO.   392  TIME/TOTAL:      784.067 /    1500.000
+   PRINTING FILE NO.   393  TIME/TOTAL:      786.067 /    1500.000
+   PRINTING FILE NO.   394  TIME/TOTAL:      788.071 /    1500.000
+  PRINTING MEAN FILE    78
+   PRINTING FILE NO.   395  TIME/TOTAL:      790.069 /    1500.000
+   PRINTING FILE NO.   396  TIME/TOTAL:      792.068 /    1500.000
+   PRINTING FILE NO.   397  TIME/TOTAL:      794.063 /    1500.000
+   PRINTING FILE NO.   398  TIME/TOTAL:      796.064 /    1500.000
+   PRINTING FILE NO.   399  TIME/TOTAL:      798.063 /    1500.000
+  PRINTING MEAN FILE    79
+ ----------------- STATISTICS ----------------
+  TIME        DT
+  0.8001E+03  0.2556E-02
+  MassVolume  Energy      MaxEta      MinEta      Max U       Max V 
+  0.2318E+01  0.1699E+04  0.2730E+00 -0.1952E+00  0.8006E+00  0.6518E+00
+  MaxTotalU   PhaseS      Froude      WetDryMass
+  0.8094E+00  0.1946E+01  0.4159E+00 -0.7185E-01
+   PRINTING FILE NO.   400  TIME/TOTAL:      800.068 /    1500.000
+   PRINTING FILE NO.   401  TIME/TOTAL:      802.069 /    1500.000
+   PRINTING FILE NO.   402  TIME/TOTAL:      804.072 /    1500.000
+   PRINTING FILE NO.   403  TIME/TOTAL:      806.069 /    1500.000
+   PRINTING FILE NO.   404  TIME/TOTAL:      808.067 /    1500.000
+  PRINTING MEAN FILE    80
+   PRINTING FILE NO.   405  TIME/TOTAL:      810.067 /    1500.000
+   PRINTING FILE NO.   406  TIME/TOTAL:      812.071 /    1500.000
+   PRINTING FILE NO.   407  TIME/TOTAL:      814.067 /    1500.000
+   PRINTING FILE NO.   408  TIME/TOTAL:      816.065 /    1500.000
+   PRINTING FILE NO.   409  TIME/TOTAL:      818.063 /    1500.000
+  PRINTING MEAN FILE    81
+   PRINTING FILE NO.   410  TIME/TOTAL:      820.058 /    1500.000
+   PRINTING FILE NO.   411  TIME/TOTAL:      822.059 /    1500.000
+   PRINTING FILE NO.   412  TIME/TOTAL:      824.065 /    1500.000
+   PRINTING FILE NO.   413  TIME/TOTAL:      826.068 /    1500.000
+   PRINTING FILE NO.   414  TIME/TOTAL:      828.073 /    1500.000
+  PRINTING MEAN FILE    82
+   PRINTING FILE NO.   415  TIME/TOTAL:      830.068 /    1500.000
+   PRINTING FILE NO.   416  TIME/TOTAL:      832.067 /    1500.000
+   PRINTING FILE NO.   417  TIME/TOTAL:      834.067 /    1500.000
+   PRINTING FILE NO.   418  TIME/TOTAL:      836.067 /    1500.000
+   PRINTING FILE NO.   419  TIME/TOTAL:      838.069 /    1500.000
+  PRINTING MEAN FILE    83
+   PRINTING FILE NO.   420  TIME/TOTAL:      840.071 /    1500.000
+   PRINTING FILE NO.   421  TIME/TOTAL:      842.071 /    1500.000
+   PRINTING FILE NO.   422  TIME/TOTAL:      844.069 /    1500.000
+   PRINTING FILE NO.   423  TIME/TOTAL:      846.071 /    1500.000
+   PRINTING FILE NO.   424  TIME/TOTAL:      848.064 /    1500.000
+  PRINTING MEAN FILE    84
+   PRINTING FILE NO.   425  TIME/TOTAL:      850.063 /    1500.000
+   PRINTING FILE NO.   426  TIME/TOTAL:      852.060 /    1500.000
+   PRINTING FILE NO.   427  TIME/TOTAL:      854.062 /    1500.000
+   PRINTING FILE NO.   428  TIME/TOTAL:      856.057 /    1500.000
+   PRINTING FILE NO.   429  TIME/TOTAL:      858.056 /    1500.000
+  PRINTING MEAN FILE    85
+   PRINTING FILE NO.   430  TIME/TOTAL:      860.055 /    1500.000
+   PRINTING FILE NO.   431  TIME/TOTAL:      862.056 /    1500.000
+   PRINTING FILE NO.   432  TIME/TOTAL:      864.060 /    1500.000
+   PRINTING FILE NO.   433  TIME/TOTAL:      866.056 /    1500.000
+   PRINTING FILE NO.   434  TIME/TOTAL:      868.055 /    1500.000
+  PRINTING MEAN FILE    86
+   PRINTING FILE NO.   435  TIME/TOTAL:      870.057 /    1500.000
+   PRINTING FILE NO.   436  TIME/TOTAL:      872.059 /    1500.000
+   PRINTING FILE NO.   437  TIME/TOTAL:      874.064 /    1500.000
+   PRINTING FILE NO.   438  TIME/TOTAL:      876.063 /    1500.000
+   PRINTING FILE NO.   439  TIME/TOTAL:      878.065 /    1500.000
+  PRINTING MEAN FILE    87
+   PRINTING FILE NO.   440  TIME/TOTAL:      880.061 /    1500.000
+   PRINTING FILE NO.   441  TIME/TOTAL:      882.067 /    1500.000
+   PRINTING FILE NO.   442  TIME/TOTAL:      884.063 /    1500.000
+   PRINTING FILE NO.   443  TIME/TOTAL:      886.058 /    1500.000
+   PRINTING FILE NO.   444  TIME/TOTAL:      888.060 /    1500.000
+  PRINTING MEAN FILE    88
+   PRINTING FILE NO.   445  TIME/TOTAL:      890.056 /    1500.000
+   PRINTING FILE NO.   446  TIME/TOTAL:      892.060 /    1500.000
+   PRINTING FILE NO.   447  TIME/TOTAL:      894.062 /    1500.000
+   PRINTING FILE NO.   448  TIME/TOTAL:      896.062 /    1500.000
+   PRINTING FILE NO.   449  TIME/TOTAL:      898.059 /    1500.000
+  PRINTING MEAN FILE    89
+   PRINTING FILE NO.   450  TIME/TOTAL:      900.059 /    1500.000
+ ----------------- STATISTICS ----------------
+  TIME        DT
+  0.9001E+03  0.2536E-02
+  MassVolume  Energy      MaxEta      MinEta      Max U       Max V 
+ -0.9653E+00  0.1669E+04  0.2829E+00 -0.1706E+00  0.7620E+00  0.8348E+00
+  MaxTotalU   PhaseS      Froude      WetDryMass
+  0.9710E+00  0.1377E+01  0.7050E+00 -0.9306E-01
+   PRINTING FILE NO.   451  TIME/TOTAL:      902.059 /    1500.000
+   PRINTING FILE NO.   452  TIME/TOTAL:      904.059 /    1500.000
+   PRINTING FILE NO.   453  TIME/TOTAL:      906.058 /    1500.000
+   PRINTING FILE NO.   454  TIME/TOTAL:      908.053 /    1500.000
+  PRINTING MEAN FILE    90
+   PRINTING FILE NO.   455  TIME/TOTAL:      910.054 /    1500.000
+   PRINTING FILE NO.   456  TIME/TOTAL:      912.049 /    1500.000
+   PRINTING FILE NO.   457  TIME/TOTAL:      914.052 /    1500.000
+   PRINTING FILE NO.   458  TIME/TOTAL:      916.056 /    1500.000
+   PRINTING FILE NO.   459  TIME/TOTAL:      918.054 /    1500.000
+  PRINTING MEAN FILE    91
+   PRINTING FILE NO.   460  TIME/TOTAL:      920.049 /    1500.000
+   PRINTING FILE NO.   461  TIME/TOTAL:      922.041 /    1500.000
+   PRINTING FILE NO.   462  TIME/TOTAL:      924.039 /    1500.000
+   PRINTING FILE NO.   463  TIME/TOTAL:      926.041 /    1500.000
+   PRINTING FILE NO.   464  TIME/TOTAL:      928.037 /    1500.000
+  PRINTING MEAN FILE    92
+   PRINTING FILE NO.   465  TIME/TOTAL:      930.039 /    1500.000
+   PRINTING FILE NO.   466  TIME/TOTAL:      932.038 /    1500.000
+   PRINTING FILE NO.   467  TIME/TOTAL:      934.044 /    1500.000
+   PRINTING FILE NO.   468  TIME/TOTAL:      936.046 /    1500.000
+   PRINTING FILE NO.   469  TIME/TOTAL:      938.042 /    1500.000
+  PRINTING MEAN FILE    93
+   PRINTING FILE NO.   470  TIME/TOTAL:      940.040 /    1500.000
+   PRINTING FILE NO.   471  TIME/TOTAL:      942.039 /    1500.000
+   PRINTING FILE NO.   472  TIME/TOTAL:      944.039 /    1500.000
+   PRINTING FILE NO.   473  TIME/TOTAL:      946.034 /    1500.000
+   PRINTING FILE NO.   474  TIME/TOTAL:      948.037 /    1500.000
+  PRINTING MEAN FILE    94
+   PRINTING FILE NO.   475  TIME/TOTAL:      950.030 /    1500.000
+   PRINTING FILE NO.   476  TIME/TOTAL:      952.035 /    1500.000
+   PRINTING FILE NO.   477  TIME/TOTAL:      954.038 /    1500.000
+   PRINTING FILE NO.   478  TIME/TOTAL:      956.039 /    1500.000
+   PRINTING FILE NO.   479  TIME/TOTAL:      958.041 /    1500.000
+  PRINTING MEAN FILE    95
+   PRINTING FILE NO.   480  TIME/TOTAL:      960.042 /    1500.000
+   PRINTING FILE NO.   481  TIME/TOTAL:      962.048 /    1500.000
+   PRINTING FILE NO.   482  TIME/TOTAL:      964.053 /    1500.000
+   PRINTING FILE NO.   483  TIME/TOTAL:      966.055 /    1500.000
+   PRINTING FILE NO.   484  TIME/TOTAL:      968.053 /    1500.000
+  PRINTING MEAN FILE    96
+   PRINTING FILE NO.   485  TIME/TOTAL:      970.055 /    1500.000
+   PRINTING FILE NO.   486  TIME/TOTAL:      972.047 /    1500.000
+   PRINTING FILE NO.   487  TIME/TOTAL:      974.043 /    1500.000
+   PRINTING FILE NO.   488  TIME/TOTAL:      976.043 /    1500.000
+   PRINTING FILE NO.   489  TIME/TOTAL:      978.048 /    1500.000
+  PRINTING MEAN FILE    97
+   PRINTING FILE NO.   490  TIME/TOTAL:      980.046 /    1500.000
+   PRINTING FILE NO.   491  TIME/TOTAL:      982.046 /    1500.000
+   PRINTING FILE NO.   492  TIME/TOTAL:      984.044 /    1500.000
+   PRINTING FILE NO.   493  TIME/TOTAL:      986.047 /    1500.000
+   PRINTING FILE NO.   494  TIME/TOTAL:      988.047 /    1500.000
+  PRINTING MEAN FILE    98
+   PRINTING FILE NO.   495  TIME/TOTAL:      990.050 /    1500.000
+   PRINTING FILE NO.   496  TIME/TOTAL:      992.051 /    1500.000
+   PRINTING FILE NO.   497  TIME/TOTAL:      994.047 /    1500.000
+   PRINTING FILE NO.   498  TIME/TOTAL:      996.050 /    1500.000
+   PRINTING FILE NO.   499  TIME/TOTAL:      998.047 /    1500.000
+  PRINTING MEAN FILE    99
+ ----------------- STATISTICS ----------------
+  TIME        DT
+  0.1000E+04  0.2712E-02
+  MassVolume  Energy      MaxEta      MinEta      Max U       Max V 
+  0.1689E+01  0.1692E+04  0.2342E+00 -0.2507E+00  0.9853E+00  0.8709E+00
+  MaxTotalU   PhaseS      Froude      WetDryMass
+  0.1214E+01  0.1214E+01  0.1000E+01 -0.1113E+00
+   PRINTING FILE NO.   500  TIME/TOTAL:     1000.049 /    1500.000
+   PRINTING FILE NO.   501  TIME/TOTAL:     1002.044 /    1500.000
+   PRINTING FILE NO.   502  TIME/TOTAL:     1004.045 /    1500.000
+   PRINTING FILE NO.   503  TIME/TOTAL:     1006.043 /    1500.000
+   PRINTING FILE NO.   504  TIME/TOTAL:     1008.043 /    1500.000
+  PRINTING MEAN FILE   100
+   PRINTING FILE NO.   505  TIME/TOTAL:     1010.041 /    1500.000
+   PRINTING FILE NO.   506  TIME/TOTAL:     1012.046 /    1500.000

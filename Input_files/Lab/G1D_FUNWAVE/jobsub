@@ -1,0 +1,53 @@
+#!/bin/bash
+#SBATCH -J funwave
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH --ntasks-per-node=1
+#SBATCH --ntasks-per-core=1
+#SBATCH --time=30:00:000
+#SBATCH -o funwave.log
+#SBATCH -e funwave.err
+#SBATCH --mail-user=simon.treillou@ird.fr
+#SBATCH --mail-type=END
+
+module purge
+module load intel/18.2 intelmpi/18.2
+
+PATHROOT=/tmpdir/cyriln/commun/intel/18.2/intelmpi/18.2/  # netCDF/HDF
+export PATH=$PATHROOT/bin:$PATH
+export LD_LIBRARY_PATH=$PATHROOT/lib:$LD_LIBRARY_PATH
+
+#export croco=/users/$GROUPE/$LOGNAME/croco/croco
+#export tools=/users/$GROUPE/$LOGNAME/croco/croco_tools
+#export confs=/users/$GROUPE/$LOGNAME/CONFIGS
+
+#export CC=icc
+#export FC=ifort
+#export F90=ifort
+#export F79=ifort
+#export MPIF90=mpiifort
+
+homedir=$SLURM_SUBMIT_DIR
+#workdir=/tmpdir/$LOGNAME/BAKER_RunG1D_WMCorr_Dyn3D_Hs0.0955_DS26.1_Tp2.0_Angle-3.3_Xi20_Eta30_Dx0.1_TracFalse_long1000_2
+workdir=/tmpdir/$LOGNAME/G1D_funwave
+#SLURM_JOBD
+archdir=/gpfs/work/$GROUPE/$USER
+
+rm -r $workdir
+mkdir $workdir
+cp funwave--mpiifort-parallel-single $workdir
+cp input.txt $workdir
+cp -r * $workdir
+cp gauges.txt $workdir
+cp depth_lab.txt $workdir
+cd $workdir
+
+echo "launching funwave ..."
+(ls) > perf.out
+(mpirun -np 1 ./funwave--mpiifort-parallel-single) > perf.out
+#(time mpiexec.hydra -np 80 funwave_exec) > funwave.out 2> perf.out
+echo "... funwave done"
+
+#cp croco.out $homedir
+#cp croco_his.nc $archdir
+#cp croco_avg.nc $archdir
