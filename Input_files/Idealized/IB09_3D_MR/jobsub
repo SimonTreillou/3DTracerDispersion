@@ -1,0 +1,60 @@
+#!/bin/bash
+#SBATCH -J IB09
+#SBATCH -N 10
+#SBATCH -n 360
+#SBATCH --ntasks-per-node=36
+#SBATCH --ntasks-per-core=1
+#SBATCH --time=05:00:000
+#SBATCH -o croco.log
+#SBATCH -e croco.err
+#SBATCH --mail-user=simon.treillou@ird.fr
+#SBATCH --mail-type=END
+
+module purge
+module load intel/18.2 intelmpi/18.2
+
+PATHROOT=/tmpdir/cyriln/commun/intel/18.2/intelmpi/18.2/  # netCDF/HDF
+export PATH=$PATHROOT/bin:$PATH
+export LD_LIBRARY_PATH=$PATHROOT/lib:$LD_LIBRARY_PATH
+
+export croco=/users/$GROUPE/$LOGNAME/croco/croco
+export tools=/users/$GROUPE/$LOGNAME/croco/croco_tools
+export confs=/users/$GROUPE/$LOGNAME/CONFIGS
+
+export CC=icc
+export FC=ifort
+export F90=ifort
+export F79=ifort
+export MPIF90=mpiifort
+
+homedir=$SLURM_SUBMIT_DIR
+workdir=/tmpdir/$LOGNAME/IB09_3D_MR_Dcrit_WMPER_test
+archdir=/gpfs/work/$GROUPE/$USER
+
+rm -r $workdir
+mkdir $workdir
+cp croco  $workdir
+cp croco.in  $workdir
+cp cppdefs.h $workdir
+cp jobsub $workdir
+cp *.F $workdir
+cp *.h $workdir
+cp Makefile $workdir
+cp stations.in $workdir
+cp -r ./Compile $workdir
+rm -r ./Compile
+cd $workdir
+touch $workdir/wd_bry.txt
+touch $workdir/wa_bry_d.txt
+touch $workdir/wf_bry.txt
+touch $workdir/wa_bry.txt
+
+
+
+echo "launching croco ..."
+(time mpiexec.hydra -np 360 ./croco croco.in) > croco.out 2> perf.out
+echo "... croco done"
+
+cp croco.out $homedir
+#cp croco_his.nc $archdir
+#cp croco_avg.nc $archdir
